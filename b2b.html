@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Empresas — Mepiache Helados Artesanales</title>
+  <meta name="description" content="Somos proveedores de helados artesanales para restaurantes, cafeterías, hoteles y eventos en Santiago. Más de 70 años de experiencia.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ════════════════ HEADER ════════════════ -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Mepiache Helados Artesanales" class="logo-img">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Nuestra historia</a>
+        <div class="nav-item">
+          <a href="productos.html">Productos</a>
+          <div class="dropdown-menu">
+            <a href="productos.html#paletas"><span class="dropdown-icono">🍡</span>Paletas</a>
+            <a href="productos.html#5litros"><span class="dropdown-icono">🍨</span>5 Litros</a>
+            <a href="productos.html#10litros"><span class="dropdown-icono">🏺</span>10 Litros</a>
+            <a href="productos.html#gelato"><span class="dropdown-icono">✨</span>Gelato Chef</a>
+            <a href="productos.html#sustancias"><span class="dropdown-icono">🤍</span>Sustancias</a>
+          </div>
+        </div>
+        <a href="visitanos.html">Visítanos</a>
+        <a href="b2b.html" class="activo">Para empresas</a>
+        <a href="https://wa.me/56963914909?text=Hola%20Mepiache" target="_blank" class="btn-whatsapp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ════════════════ PAGE HERO ════════════════ -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="etiqueta-seccion claro">Clientes B2B</span>
+      <h1 class="page-hero-titulo">Helados artesanales para tu negocio</h1>
+      <p class="page-hero-sub">Restaurantes, cafeterías, hoteles, pastelerías y eventos. Más de 70 años elaborando helados con oficio — ahora como proveedor para tu negocio.</p>
+    </div>
+  </section>
+
+  <!-- ════════════════ BENEFICIOS ════════════════ -->
+  <div class="b2b-beneficios-strip">
+    <div class="container">
+      <div class="b2b-beneficios-grid">
+        <div class="b2b-beneficio">
+          <span class="b2b-beneficio-icono">🏺</span>
+          <h4>Volúmenes mayoristas</h4>
+          <p>Desde paletas individuales hasta formatos 10 litros</p>
+        </div>
+        <div class="b2b-beneficio">
+          <span class="b2b-beneficio-icono">🎨</span>
+          <h4>Personalización</h4>
+          <p>Sabores, presentaciones y etiquetado a medida</p>
+        </div>
+        <div class="b2b-beneficio">
+          <span class="b2b-beneficio-icono">🤝</span>
+          <h4>Trato directo</h4>
+          <p>Sin intermediarios, con el mismo equipo de siempre</p>
+        </div>
+        <div class="b2b-beneficio">
+          <span class="b2b-beneficio-icono">📅</span>
+          <h4>Entregas programadas</h4>
+          <p>Coordina frecuencia y condiciones según tu negocio</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════ FORMULARIO ════════════════ -->
+  <section class="seccion seccion-crema">
+    <div class="container">
+      <div class="b2b-layout">
+
+        <!-- ── Formulario principal ── -->
+        <div>
+          <form id="form-b2b" class="b2b-form" novalidate>
+
+            <!-- Sec 1: Tu negocio -->
+            <div class="b2b-form-sec">
+              <p class="b2b-sec-titulo"><span class="b2b-sec-icono">🏢</span> Tu negocio</p>
+              <div class="b2b-grid-2">
+                <div class="form-grupo">
+                  <label class="form-label" for="negocio-nombre">Nombre del negocio <span class="req">*</span></label>
+                  <input id="negocio-nombre" class="form-input" type="text" placeholder="Ej: Café El Molino" required>
+                </div>
+                <div class="form-grupo">
+                  <label class="form-label" for="negocio-tipo">Tipo de negocio <span class="req">*</span></label>
+                  <select id="negocio-tipo" class="form-select" required>
+                    <option value="">Selecciona...</option>
+                    <option>Restaurante</option>
+                    <option>Cafetería / Café</option>
+                    <option>Hotel / Hostal</option>
+                    <option>Pastelería / Panadería</option>
+                    <option>Catering / Eventos</option>
+                    <option>Supermercado / Almacén / Minimarket</option>
+                    <option>Heladería / Gelatería</option>
+                    <option>Casino / Servicio de alimentación</option>
+                    <option>Empresa / Corporativo</option>
+                    <option>Colegio / Universidad</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="b2b-grid-2">
+                <div class="form-grupo">
+                  <label class="form-label" for="negocio-rut">RUT empresa</label>
+                  <input id="negocio-rut" class="form-input" type="text" placeholder="12.345.678-9">
+                </div>
+                <div class="form-grupo">
+                  <label class="form-label" for="negocio-ciudad">Ciudad / Dirección de entrega <span class="req">*</span></label>
+                  <input id="negocio-ciudad" class="form-input" type="text" placeholder="Ej: Providencia, Santiago" required>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sec 2: Tu contacto -->
+            <div class="b2b-form-sec">
+              <p class="b2b-sec-titulo"><span class="b2b-sec-icono">👤</span> Tu contacto</p>
+              <div class="b2b-grid-2">
+                <div class="form-grupo">
+                  <label class="form-label" for="contacto-nombre">Nombre completo <span class="req">*</span></label>
+                  <input id="contacto-nombre" class="form-input" type="text" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-grupo">
+                  <label class="form-label" for="contacto-cargo">Cargo en la empresa</label>
+                  <select id="contacto-cargo" class="form-select">
+                    <option value="">Selecciona...</option>
+                    <option>Dueño / Dueña</option>
+                    <option>Gerente general</option>
+                    <option>Encargado de compras</option>
+                    <option>Chef / Cocinero jefe</option>
+                    <option>Administrador / Administradora</option>
+                    <option>Coordinador de eventos</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="b2b-grid-2">
+                <div class="form-grupo">
+                  <label class="form-label" for="contacto-tel">Teléfono <span class="req">*</span></label>
+                  <input id="contacto-tel" class="form-input" type="tel" placeholder="+56 9 XXXX XXXX" required>
+                </div>
+                <div class="form-grupo">
+                  <label class="form-label" for="contacto-email">Email</label>
+                  <input id="contacto-email" class="form-input" type="email" placeholder="tu@negocio.cl">
+                </div>
+              </div>
+              <div class="form-grupo">
+                <label class="form-label" for="contacto-horario">Mejor horario para contactarte</label>
+                <select id="contacto-horario" class="form-select">
+                  <option value="">Selecciona...</option>
+                  <option>Mañana (9:00 – 12:00)</option>
+                  <option>Mediodía (12:00 – 14:00)</option>
+                  <option>Tarde (14:00 – 18:00)</option>
+                  <option>Cualquier hora de oficina</option>
+                  <option>Solo WhatsApp (respondo cuando pueda)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Sec 3: Productos y volumen -->
+            <div class="b2b-form-sec">
+              <p class="b2b-sec-titulo"><span class="b2b-sec-icono">🍦</span> Productos y volumen</p>
+              <div class="form-grupo">
+                <label class="form-label">Productos de interés <span class="req">*</span></label>
+                <div class="form-chips">
+                  <label><input type="checkbox" name="productos" class="form-chip-input" data-label="Paletas artesanales"><span class="form-chip-label">🍡 Paletas artesanales</span></label>
+                  <label><input type="checkbox" name="productos" class="form-chip-input" data-label="Helados 5 litros"><span class="form-chip-label">🍨 Helados 5 litros</span></label>
+                  <label><input type="checkbox" name="productos" class="form-chip-input" data-label="Helados 10 litros"><span class="form-chip-label">🏺 Helados 10 litros</span></label>
+                  <label><input type="checkbox" name="productos" class="form-chip-input" data-label="Gelato Chef"><span class="form-chip-label">✨ Gelato Chef</span></label>
+                  <label><input type="checkbox" name="productos" class="form-chip-input" data-label="Sustancias para elaboración"><span class="form-chip-label">🤍 Sustancias</span></label>
+                  <label><input type="checkbox" name="productos" class="form-chip-input" data-label="Productos para eventos / catering"><span class="form-chip-label">🎂 Eventos / catering</span></label>
+                </div>
+                <p class="form-error-msg" id="productos-error">Selecciona al menos un producto</p>
+              </div>
+              <div class="b2b-grid-2">
+                <div class="form-grupo">
+                  <label class="form-label" for="volumen">Volumen mensual estimado</label>
+                  <select id="volumen" class="form-select">
+                    <option value="">Selecciona...</option>
+                    <option>Menos de 50 unidades / mes</option>
+                    <option>50 – 200 unidades / mes</option>
+                    <option>200 – 500 unidades / mes</option>
+                    <option>Más de 500 unidades / mes</option>
+                    <option>Pedido único / evento</option>
+                    <option>Aún no lo sé</option>
+                  </select>
+                </div>
+                <div class="form-grupo">
+                  <label class="form-label" for="primer-pedido">¿Cuándo necesitas el primer pedido?</label>
+                  <select id="primer-pedido" class="form-select">
+                    <option value="">Selecciona...</option>
+                    <option>Lo antes posible</option>
+                    <option>En 1 – 2 semanas</option>
+                    <option>Este mes</option>
+                    <option>El próximo mes</option>
+                    <option>Estoy cotizando (sin fecha aún)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-grupo">
+                <label class="form-label">Frecuencia de pedido</label>
+                <div class="form-chips">
+                  <label><input type="radio" name="frecuencia" class="form-chip-input form-chip-radio" data-label="Semanal"><span class="form-chip-label">Semanal</span></label>
+                  <label><input type="radio" name="frecuencia" class="form-chip-input form-chip-radio" data-label="Quincenal"><span class="form-chip-label">Quincenal</span></label>
+                  <label><input type="radio" name="frecuencia" class="form-chip-input form-chip-radio" data-label="Mensual"><span class="form-chip-label">Mensual</span></label>
+                  <label><input type="radio" name="frecuencia" class="form-chip-input form-chip-radio" data-label="Solo para eventos puntuales"><span class="form-chip-label">Solo eventos</span></label>
+                  <label><input type="radio" name="frecuencia" class="form-chip-input form-chip-radio" data-label="Aún no lo sé"><span class="form-chip-label">Aún no lo sé</span></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sec 4: Logística -->
+            <div class="b2b-form-sec">
+              <p class="b2b-sec-titulo"><span class="b2b-sec-icono">🚚</span> Entrega y logística</p>
+              <div class="form-grupo">
+                <label class="form-label">¿Necesitas despacho a domicilio?</label>
+                <div class="form-chips">
+                  <label><input type="radio" name="despacho" class="form-chip-input form-chip-radio" data-label="Sí, necesito despacho a mi local"><span class="form-chip-label">Sí, necesito despacho</span></label>
+                  <label><input type="radio" name="despacho" class="form-chip-input form-chip-radio" data-label="Puedo retirar en San Joaquín"><span class="form-chip-label">Puedo retirar</span></label>
+                  <label><input type="radio" name="despacho" class="form-chip-input form-chip-radio" data-label="Depende del volumen del pedido"><span class="form-chip-label">Depende del pedido</span></label>
+                </div>
+              </div>
+              <div class="form-grupo">
+                <label class="form-label">¿Tienes cadena de frío / congelador disponible?</label>
+                <div class="form-chips">
+                  <label><input type="radio" name="frio" class="form-chip-input form-chip-radio" data-label="Sí, tenemos congelador adecuado"><span class="form-chip-label">Sí, tenemos</span></label>
+                  <label><input type="radio" name="frio" class="form-chip-input form-chip-radio" data-label="No tenemos, necesitamos orientación"><span class="form-chip-label">No tenemos</span></label>
+                  <label><input type="radio" name="frio" class="form-chip-input form-chip-radio" data-label="Tenemos de forma parcial"><span class="form-chip-label">Parcialmente</span></label>
+                </div>
+              </div>
+              <div class="form-grupo">
+                <label class="form-label">¿Necesitas factura o boleta?</label>
+                <div class="form-chips">
+                  <label><input type="radio" name="factura" class="form-chip-input form-chip-radio" data-label="Factura electrónica"><span class="form-chip-label">Factura electrónica</span></label>
+                  <label><input type="radio" name="factura" class="form-chip-input form-chip-radio" data-label="Boleta"><span class="form-chip-label">Boleta</span></label>
+                  <label><input type="radio" name="factura" class="form-chip-input form-chip-radio" data-label="Indiferente / A coordinar"><span class="form-chip-label">A coordinar</span></label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sec 5: Personalización -->
+            <div class="b2b-form-sec">
+              <p class="b2b-sec-titulo"><span class="b2b-sec-icono">🎨</span> Personalización</p>
+              <div class="form-grupo">
+                <label class="form-label">¿Necesitas sabores o presentaciones personalizadas?</label>
+                <div class="form-chips">
+                  <label><input type="radio" name="personalizado" class="form-chip-input form-chip-radio" data-label="Sí, es importante para nosotros"><span class="form-chip-label">Sí, es importante</span></label>
+                  <label><input type="radio" name="personalizado" class="form-chip-input form-chip-radio" data-label="Me podría interesar saber más"><span class="form-chip-label">Me podría interesar</span></label>
+                  <label><input type="radio" name="personalizado" class="form-chip-input form-chip-radio" data-label="No, con los sabores estándar me basta"><span class="form-chip-label">No, con estándar me basta</span></label>
+                </div>
+              </div>
+              <div class="form-grupo">
+                <label class="form-label">Categorías de sabores de mayor interés</label>
+                <div class="form-chips">
+                  <label><input type="checkbox" name="sabores-tipo" class="form-chip-input" data-label="Frutales"><span class="form-chip-label">🍓 Frutales</span></label>
+                  <label><input type="checkbox" name="sabores-tipo" class="form-chip-input" data-label="Cremosos / Lácteos"><span class="form-chip-label">🍦 Cremosos</span></label>
+                  <label><input type="checkbox" name="sabores-tipo" class="form-chip-input" data-label="Veganos / Sin lactosa"><span class="form-chip-label">🌱 Veganos</span></label>
+                  <label><input type="checkbox" name="sabores-tipo" class="form-chip-input" data-label="Sin azúcar"><span class="form-chip-label">○ Sin azúcar</span></label>
+                  <label><input type="checkbox" name="sabores-tipo" class="form-chip-input" data-label="Premium / Gourmet"><span class="form-chip-label">✦ Premium</span></label>
+                  <label><input type="checkbox" name="sabores-tipo" class="form-chip-input" data-label="Sabores chilenos clásicos (lúcuma, chirimoya, manjar)"><span class="form-chip-label">🇨🇱 Sabores chilenos</span></label>
+                  <label><input type="checkbox" name="sabores-tipo" class="form-chip-input" data-label="Sabores de temporada"><span class="form-chip-label">🌸 Temporada</span></label>
+                </div>
+              </div>
+              <div class="b2b-grid-2">
+                <div class="form-grupo">
+                  <label class="form-label">¿Necesitas etiquetado con tu marca?</label>
+                  <div class="form-chips">
+                    <label><input type="radio" name="etiquetado" class="form-chip-input form-chip-radio" data-label="Sí, quiero etiquetado con mi marca"><span class="form-chip-label">Sí</span></label>
+                    <label><input type="radio" name="etiquetado" class="form-chip-input form-chip-radio" data-label="No, con etiqueta Mepiache está bien"><span class="form-chip-label">No</span></label>
+                    <label><input type="radio" name="etiquetado" class="form-chip-input form-chip-radio" data-label="A consultar"><span class="form-chip-label">A consultar</span></label>
+                  </div>
+                </div>
+                <div class="form-grupo">
+                  <label class="form-label">¿Necesitas asesoría para armar la carta?</label>
+                  <div class="form-chips">
+                    <label><input type="radio" name="asesoria" class="form-chip-input form-chip-radio" data-label="Sí, me gustaría orientación para la carta"><span class="form-chip-label">Sí, me interesa</span></label>
+                    <label><input type="radio" name="asesoria" class="form-chip-input form-chip-radio" data-label="No, ya sé lo que necesito"><span class="form-chip-label">No, ya sé</span></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sec 6: Sobre tu situación actual -->
+            <div class="b2b-form-sec">
+              <p class="b2b-sec-titulo"><span class="b2b-sec-icono">💬</span> Cuéntanos más</p>
+              <div class="form-grupo">
+                <label class="form-label">¿Ya trabajas con algún proveedor de helados?</label>
+                <div class="form-chips">
+                  <label><input type="radio" name="proveedor" class="form-chip-input form-chip-radio" data-label="Sí, tengo proveedor actual"><span class="form-chip-label">Sí, tengo proveedor</span></label>
+                  <label><input type="radio" name="proveedor" class="form-chip-input form-chip-radio" data-label="No, sería el primero"><span class="form-chip-label">No, sería el primero</span></label>
+                  <label><input type="radio" name="proveedor" class="form-chip-input form-chip-radio" data-label="Tenía uno pero busco cambio"><span class="form-chip-label">Busco cambio</span></label>
+                  <label><input type="radio" name="proveedor" class="form-chip-input form-chip-radio" data-label="Actualmente elaboramos nuestros propios helados"><span class="form-chip-label">Elaboramos propios</span></label>
+                </div>
+              </div>
+              <div class="form-grupo">
+                <label class="form-label">¿Cómo nos conociste?</label>
+                <div class="form-chips">
+                  <label><input type="radio" name="origen" class="form-chip-input form-chip-radio" data-label="Google / búsqueda web"><span class="form-chip-label">Google</span></label>
+                  <label><input type="radio" name="origen" class="form-chip-input form-chip-radio" data-label="Instagram"><span class="form-chip-label">Instagram</span></label>
+                  <label><input type="radio" name="origen" class="form-chip-input form-chip-radio" data-label="Recomendación de otro negocio"><span class="form-chip-label">Recomendación</span></label>
+                  <label><input type="radio" name="origen" class="form-chip-input form-chip-radio" data-label="Pasé por el local en San Joaquín"><span class="form-chip-label">Pasé por el local</span></label>
+                  <label><input type="radio" name="origen" class="form-chip-input form-chip-radio" data-label="Ya era cliente como persona"><span class="form-chip-label">Ya era cliente</span></label>
+                  <label><input type="radio" name="origen" class="form-chip-input form-chip-radio" data-label="Otro"><span class="form-chip-label">Otro</span></label>
+                </div>
+              </div>
+              <div class="form-grupo">
+                <label class="form-label" for="mensaje">Mensaje adicional</label>
+                <textarea id="mensaje" class="form-textarea" placeholder="Cuéntanos más sobre tu negocio, condiciones especiales que necesites, preguntas sobre productos o cualquier detalle que quieras que sepamos antes de contactarte..."></textarea>
+              </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="b2b-submit-area">
+              <p class="b2b-submit-nota">Al enviar, se abrirá WhatsApp con toda tu información lista. Te contactaremos a la brevedad.</p>
+              <button type="submit" class="btn-wa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+                Enviar consulta por WhatsApp
+              </button>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- ── Sidebar ── -->
+        <aside class="b2b-sidebar">
+
+          <div class="b2b-sidebar-card">
+            <h3>¿Cómo funciona?</h3>
+            <div class="b2b-paso">
+              <div class="b2b-paso-num">1</div>
+              <p><strong>Completa el formulario</strong><br>Cuéntanos sobre tu negocio y qué productos necesitas.</p>
+            </div>
+            <div class="b2b-paso">
+              <div class="b2b-paso-num">2</div>
+              <p><strong>Te contactamos</strong><br>Nuestro equipo te llama o escribe dentro de 24 horas hábiles.</p>
+            </div>
+            <div class="b2b-paso">
+              <div class="b2b-paso-num">3</div>
+              <p><strong>Acuerdo a medida</strong><br>Definimos volúmenes, frecuencia, precios y condiciones de entrega.</p>
+            </div>
+            <div class="b2b-paso">
+              <div class="b2b-paso-num">4</div>
+              <p><strong>¡Empezamos!</strong><br>Primer pedido listo. Con más de 70 años de experiencia a tu servicio.</p>
+            </div>
+          </div>
+
+          <div class="b2b-sidebar-card">
+            <h3>¿Prefieres hablar directo?</h3>
+            <p style="font-family: Arial, sans-serif; font-size: 13px; color: var(--gris-texto); margin-bottom: 16px; line-height: 1.55;">Si tienes urgencia o quieres coordinar en persona, escríbenos sin formulario.</p>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              <a href="https://wa.me/56963914909?text=Hola%20Mepiache,%20quiero%20consultar%20sobre%20ser%20cliente%20B2B" target="_blank" class="btn-wa btn-full">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+                WhatsApp directo
+              </a>
+              <a href="tel:+56963914909" class="btn-outline btn-full">📞 Llamar ahora</a>
+            </div>
+          </div>
+
+          <div class="b2b-sidebar-card oscuro">
+            <h3>Más de 70 años de experiencia</h3>
+            <p style="font-family: Arial, sans-serif; font-size: 13px; color: rgba(245,230,200,0.65); line-height: 1.55; margin: 0;">Restaurantes, cafeterías y eventos en Santiago ya trabajan con Mepiache. Elaboración artesanal, sin intermediarios.</p>
+            <div class="b2b-stats-mini">
+              <div class="b2b-stat-mini">
+                <strong>1954</strong>
+                <span>Desde</span>
+              </div>
+              <div class="b2b-stat-mini">
+                <strong>100%</strong>
+                <span>Artesanal</span>
+              </div>
+              <div class="b2b-stat-mini">
+                <strong>70+</strong>
+                <span>Sabores</span>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ FOOTER ════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="logo.png" alt="Mepiache" class="footer-logo">
+      <p class="footer-tagline" data-config="tagline">Helados artesanales con historia desde 1954</p>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Nuestra historia</a>
+        <a href="productos.html">Productos</a>
+        <a href="visitanos.html">Visítanos</a>
+        <a href="b2b.html">Para empresas</a>
+      </div>
+      <p class="footer-datos" data-config="direccion">Álvarez de Toledo 410, San Joaquín, Santiago</p>
+      <p class="footer-copy" data-config="copyright">© 2026 Mepiache. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/56963914909?text=Hola%20Mepiache" target="_blank" class="wa-flotante" title="Escribir por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+  </a>
+
+  <script src="config.js"></script>
+  <script>
+    window.addEventListener('scroll', () => {
+      document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 40);
+    });
+    var menuToggle = document.querySelector('.menu-toggle');
+    var headerEl   = document.querySelector('.header');
+    menuToggle.addEventListener('click', function () {
+      var open = headerEl.classList.toggle('menu-abierto');
+      this.setAttribute('aria-expanded', String(open));
+    });
+    document.querySelectorAll('.nav-item > a').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) { e.preventDefault(); this.closest('.nav-item').classList.toggle('abierto'); }
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-item')) document.querySelectorAll('.nav-item').forEach(function(n) { n.classList.remove('abierto'); });
+      if (!e.target.closest('.header')) { headerEl.classList.remove('menu-abierto'); menuToggle.setAttribute('aria-expanded', 'false'); }
+    });
+
+    /* ── Envío del formulario B2B → WhatsApp ── */
+    document.getElementById('form-b2b').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var valid = true;
+
+      // Validar campos required
+      this.querySelectorAll('[required]').forEach(function(el) {
+        el.classList.remove('error');
+        if (!el.value.trim()) { el.classList.add('error'); valid = false; }
+      });
+
+      // Validar al menos 1 producto
+      var prods = document.querySelectorAll('input[name="productos"]:checked');
+      var prodErr = document.getElementById('productos-error');
+      if (prods.length === 0) {
+        prodErr.classList.add('visible');
+        valid = false;
+      } else {
+        prodErr.classList.remove('visible');
+      }
+
+      if (!valid) {
+        var first = document.querySelector('.form-input.error, .form-select.error, .form-error-msg.visible');
+        if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      // Helpers
+      var val = function(id) { return document.getElementById(id).value.trim(); };
+      var checked = function(name) {
+        var arr = [];
+        document.querySelectorAll('input[name="' + name + '"]:checked').forEach(function(el) { arr.push(el.dataset.label); });
+        return arr;
+      };
+      var radio = function(name) {
+        var el = document.querySelector('input[name="' + name + '"]:checked');
+        return el ? el.dataset.label : '';
+      };
+
+      // Construir mensaje
+      var L = [];
+      L.push('Hola Mepiache, me interesa trabajar con ustedes como cliente B2B.\n');
+
+      L.push('🏢 *Negocio:* ' + val('negocio-nombre') + ' (' + val('negocio-tipo') + ')');
+      if (val('negocio-rut')) L.push('🪪 *RUT:* ' + val('negocio-rut'));
+      L.push('📍 *Ubicación:* ' + val('negocio-ciudad'));
+      L.push('');
+
+      var cargo = val('contacto-cargo');
+      L.push('👤 *Contacto:* ' + val('contacto-nombre') + (cargo ? ', ' + cargo : ''));
+      L.push('📞 *Teléfono:* ' + val('contacto-tel'));
+      if (val('contacto-email'))  L.push('✉️ *Email:* ' + val('contacto-email'));
+      if (val('contacto-horario')) L.push('⏰ *Mejor hora:* ' + val('contacto-horario'));
+      L.push('');
+
+      var productos = checked('productos');
+      if (productos.length) {
+        L.push('🍦 *Productos de interés:*');
+        productos.forEach(function(p) { L.push('  · ' + p); });
+        L.push('');
+      }
+      if (val('volumen'))       L.push('📦 *Volumen mensual:* ' + val('volumen'));
+      if (val('primer-pedido')) L.push('📅 *Primer pedido:* ' + val('primer-pedido'));
+      if (radio('frecuencia'))  L.push('🔄 *Frecuencia:* ' + radio('frecuencia'));
+      if (radio('despacho'))    L.push('🚚 *Despacho:* ' + radio('despacho'));
+      if (radio('frio'))        L.push('❄️ *Cadena de frío:* ' + radio('frio'));
+      if (radio('factura'))     L.push('🧾 *Facturación:* ' + radio('factura'));
+      L.push('');
+
+      if (radio('personalizado')) L.push('🎨 *Personalización:* ' + radio('personalizado'));
+      var saboresTipo = checked('sabores-tipo');
+      if (saboresTipo.length) L.push('🍓 *Sabores preferidos:* ' + saboresTipo.join(', '));
+      if (radio('etiquetado'))  L.push('🏷️ *Etiquetado propio:* ' + radio('etiquetado'));
+      if (radio('asesoria'))    L.push('📋 *Asesoría carta:* ' + radio('asesoria'));
+      L.push('');
+
+      if (radio('proveedor'))   L.push('🤝 *Proveedor actual:* ' + radio('proveedor'));
+      if (radio('origen'))      L.push('📣 *Cómo nos conoció:* ' + radio('origen'));
+
+      if (val('mensaje')) {
+        L.push('');
+        L.push('💬 *Notas adicionales:*');
+        L.push(val('mensaje'));
+      }
+
+      var url = 'https://wa.me/' + MEPIACHE.wa + '?text=' + encodeURIComponent(L.join('\n'));
+      window.open(url, '_blank');
+    });
+
+    // Quitar error al corregir campo
+    document.querySelectorAll('.form-input[required], .form-select[required]').forEach(function(el) {
+      el.addEventListener('input', function() { this.classList.remove('error'); });
+    });
+    document.querySelectorAll('input[name="productos"]').forEach(function(cb) {
+      cb.addEventListener('change', function() {
+        if (document.querySelectorAll('input[name="productos"]:checked').length > 0) {
+          document.getElementById('productos-error').classList.remove('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

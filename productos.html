@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos — Mepiache Helados Artesanales</title>
+  <meta name="description" content="Paletas artesanales, helados 5 y 10 litros, Gelato Chef y sustancias. Los productos de Mepiache con más de 70 años de tradición artesanal.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ════════════════ HEADER ════════════════ -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Mepiache Helados Artesanales" class="logo-img">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Nuestra historia</a>
+        <div class="nav-item">
+          <a href="productos.html" class="activo">Productos</a>
+          <div class="dropdown-menu">
+            <a href="productos.html#paletas"><span class="dropdown-icono">🍡</span>Paletas</a>
+            <a href="productos.html#5litros"><span class="dropdown-icono">🍨</span>5 Litros</a>
+            <a href="productos.html#10litros"><span class="dropdown-icono">🏺</span>10 Litros</a>
+            <a href="productos.html#gelato"><span class="dropdown-icono">✨</span>Gelato Chef</a>
+            <a href="productos.html#sustancias"><span class="dropdown-icono">🤍</span>Sustancias</a>
+          </div>
+        </div>
+        <a href="visitanos.html">Visítanos</a>
+        <a href="b2b.html">Para empresas</a>
+        <a href="https://wa.me/56963914909?text=Hola%20Mepiache" target="_blank" class="btn-whatsapp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+          WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ════════════════ PAGE HERO ════════════════ -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="etiqueta-seccion claro">Lo que elaboramos</span>
+      <h1 class="page-hero-titulo">Nuestros productos</h1>
+      <p class="page-hero-sub">Haz clic en cualquier sabor para ver su descripción, ingredientes y tabla nutricional.</p>
+    </div>
+  </section>
+
+  <!-- ════════════════ TABS + CATEGORÍAS ════════════════ -->
+  <section class="seccion seccion-crema">
+    <div class="container">
+
+      <div class="tabs-nav" role="tablist">
+        <button class="tab-btn activo" data-tab="paletas" role="tab">
+          <span class="tab-icono">🍡</span>
+          <span class="tab-nombre">Paletas</span>
+          <span class="tab-desc-corta">Artesanales</span>
+        </button>
+        <button class="tab-btn" data-tab="5litros" role="tab">
+          <span class="tab-icono">🍨</span>
+          <span class="tab-nombre">5 Litros</span>
+          <span class="tab-desc-corta">Formato clásico</span>
+        </button>
+        <button class="tab-btn" data-tab="10litros" role="tab">
+          <span class="tab-icono">🏺</span>
+          <span class="tab-nombre">10 Litros</span>
+          <span class="tab-desc-corta">Mayor volumen</span>
+        </button>
+        <button class="tab-btn" data-tab="gelato" role="tab">
+          <span class="tab-icono">✨</span>
+          <span class="tab-nombre">Gelato Chef</span>
+          <span class="tab-desc-corta">Línea premium</span>
+        </button>
+        <button class="tab-btn" data-tab="sustancias" role="tab">
+          <span class="tab-icono">🤍</span>
+          <span class="tab-nombre">Sustancias</span>
+          <span class="tab-desc-corta">Tradicionales</span>
+        </button>
+      </div>
+
+      <!-- ── Paletas ── -->
+      <div class="tab-panel activo" id="tab-paletas" role="tabpanel">
+        <div class="categoria-bloque" id="paletas">
+          <div class="categoria-imagen">
+            <img src="img/paleta-frutos-bosque.jpg" alt="Paleta frutos del bosque Mepiache">
+          </div>
+          <div class="categoria-contenido">
+            <h3>Paletas artesanales</h3>
+            <p>Paletas en formato individual de 90 gramos, con sabores frutales, cremosos y alternativas especiales, pensadas para quienes buscan frescura, sabor y variedad. Haz clic en un sabor para ver su ficha.</p>
+
+            <div class="sabores-grupo">
+              <span class="sabores-grupo-titulo">Sabores frutales</span>
+              <div class="sabores-chips">
+                <button type="button" class="sabor-chip" data-sabor="mango-maracuya" data-tab="paletas">Mango Maracuyá</button>
+                <button type="button" class="sabor-chip" data-sabor="frambuesa-huerto" data-tab="paletas">Frambuesa del huerto</button>
+                <button type="button" class="sabor-chip" data-sabor="frutilla-natural" data-tab="paletas">Frutilla natural</button>
+                <button type="button" class="sabor-chip" data-sabor="limon-menta-jengibre" data-tab="paletas">Limón Menta Jengibre</button>
+                <button type="button" class="sabor-chip" data-sabor="pina-caramelo" data-tab="paletas">Piña Caramelo</button>
+                <button type="button" class="sabor-chip" data-sabor="pina-albahaca" data-tab="paletas">Piña Albahaca</button>
+                <button type="button" class="sabor-chip" data-sabor="frutos-bosque" data-tab="paletas">Frutos del bosque</button>
+              </div>
+            </div>
+
+            <div class="sabores-grupo">
+              <span class="sabores-grupo-titulo">Sabores crema</span>
+              <div class="sabores-chips">
+                <button type="button" class="sabor-chip" data-sabor="chocolate-nutella" data-tab="paletas">Chocolate Nutella</button>
+                <button type="button" class="sabor-chip" data-sabor="manjar-nuez" data-tab="paletas">Manjar Nuez</button>
+                <button type="button" class="sabor-chip" data-sabor="pistacho" data-tab="paletas">Pistacho</button>
+                <button type="button" class="sabor-chip" data-sabor="cookies-cream" data-tab="paletas">Cookies &amp; Cream</button>
+                <button type="button" class="sabor-chip" data-sabor="vainilla" data-tab="paletas">Vainilla</button>
+                <button type="button" class="sabor-chip" data-sabor="bombon-frambuesa" data-tab="paletas">Bombón Frambuesa</button>
+              </div>
+            </div>
+
+            <div class="sabores-grupo">
+              <span class="sabores-grupo-titulo">Veganas / sin azúcar</span>
+              <div class="sabores-chips">
+                <button type="button" class="sabor-chip vegano" data-sabor="chocolate-dark-vegano" data-tab="paletas">Chocolate Dark Vegano</button>
+                <button type="button" class="sabor-chip vegano" data-sabor="maracuya-pina" data-tab="paletas">Maracuyá Piña</button>
+                <button type="button" class="sabor-chip vegano" data-sabor="frutilla-frambuesa" data-tab="paletas">Frutilla Frambuesa</button>
+              </div>
+            </div>
+
+            <!-- Panel detalle sabor -->
+            <div class="sabor-detalle" id="detalle-paletas" hidden>
+              <div class="sabor-detalle-header">
+                <div>
+                  <span class="sabor-detalle-tipo"></span>
+                  <h4 class="sabor-detalle-nombre"></h4>
+                  <span class="sabor-disp"></span>
+                </div>
+                <button type="button" class="sabor-detalle-cerrar" aria-label="Cerrar">×</button>
+              </div>
+              <p class="sabor-detalle-desc"></p>
+              <p class="sabor-detalle-meta"><strong>Ingredientes:</strong> <span class="ing-val"></span></p>
+              <p class="sabor-detalle-meta"><strong>Alérgenos:</strong> <span class="alerg-val"></span></p>
+              <details class="nutri-panel">
+                <summary>📊 Ver tabla nutricional (por 100 g)</summary>
+                <div class="nutri-inner">
+                  <table class="nutri-table">
+                    <tbody>
+                      <tr><td>Valor energético</td><td class="n-kcal"></td></tr>
+                      <tr><td>Grasas totales</td><td class="n-grasas"></td></tr>
+                      <tr class="nutri-sub"><td>de las cuales saturadas</td><td class="n-sat"></td></tr>
+                      <tr><td>Hidratos de carbono</td><td class="n-hc"></td></tr>
+                      <tr class="nutri-sub"><td>de los cuales azúcares</td><td class="n-az"></td></tr>
+                      <tr><td>Proteínas</td><td class="n-prot"></td></tr>
+                      <tr><td>Sal</td><td class="n-sal"></td></tr>
+                    </tbody>
+                  </table>
+                  <p class="nutri-disclaimer">* Valores referenciales. Varían según lote y temporada.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="categoria-cta">
+              <a href="https://wa.me/56963914909?text=Hola%20Mepiache,%20quiero%20consultar%20las%20paletas%20artesanales" target="_blank" class="btn-wa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+                Consultar paletas
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Helados 5 Litros ── -->
+      <div class="tab-panel" id="tab-5litros" role="tabpanel">
+        <div class="categoria-bloque" id="5litros">
+          <div class="categoria-imagen">
+            <img src="img/envase-5litros.jpg" alt="Helados Mepiache formato 5 litros">
+          </div>
+          <div class="categoria-contenido">
+            <h3>Helados 5 litros</h3>
+            <p>Formato clásico para compartir, vender o disfrutar en distintas ocasiones. Una de las líneas principales de Mepiache, disponible en una amplia variedad de sabores. Haz clic en un sabor para ver su ficha.</p>
+
+            <div class="sabores-grupo">
+              <span class="sabores-grupo-titulo">Sabores disponibles</span>
+              <div class="sabores-chips">
+                <button type="button" class="sabor-chip" data-sabor="arroz-leche" data-tab="5litros">Arroz con leche</button>
+                <button type="button" class="sabor-chip" data-sabor="banana-split" data-tab="5litros">Banana Split</button>
+                <button type="button" class="sabor-chip" data-sabor="cafe-capuchino" data-tab="5litros">Café Capuchino</button>
+                <button type="button" class="sabor-chip" data-sabor="chirimoya-alegre" data-tab="5litros">Chirimoya Alegre</button>
+                <button type="button" class="sabor-chip" data-sabor="chocolate-clasico" data-tab="5litros">Chocolate Clásico</button>
+                <button type="button" class="sabor-chip" data-sabor="frambuesa-5l" data-tab="5litros">Frambuesa</button>
+                <button type="button" class="sabor-chip" data-sabor="frutos-bosque-5l" data-tab="5litros">Frutos del Bosque</button>
+                <button type="button" class="sabor-chip" data-sabor="lucuma-manjar" data-tab="5litros">Lúcuma Manjar</button>
+                <button type="button" class="sabor-chip" data-sabor="pina-agua" data-tab="5litros">Piña al Agua</button>
+                <button type="button" class="sabor-chip" data-sabor="pistacho-5l" data-tab="5litros">Pistacho</button>
+                <button type="button" class="sabor-chip" data-sabor="vainilla-5l" data-tab="5litros">Vainilla</button>
+              </div>
+            </div>
+
+            <!-- Panel detalle sabor -->
+            <div class="sabor-detalle" id="detalle-5litros" hidden>
+              <div class="sabor-detalle-header">
+                <div>
+                  <span class="sabor-detalle-tipo"></span>
+                  <h4 class="sabor-detalle-nombre"></h4>
+                  <span class="sabor-disp"></span>
+                </div>
+                <button type="button" class="sabor-detalle-cerrar" aria-label="Cerrar">×</button>
+              </div>
+              <p class="sabor-detalle-desc"></p>
+              <p class="sabor-detalle-meta"><strong>Ingredientes:</strong> <span class="ing-val"></span></p>
+              <p class="sabor-detalle-meta"><strong>Alérgenos:</strong> <span class="alerg-val"></span></p>
+              <details class="nutri-panel">
+                <summary>📊 Ver tabla nutricional (por 100 g)</summary>
+                <div class="nutri-inner">
+                  <table class="nutri-table">
+                    <tbody>
+                      <tr><td>Valor energético</td><td class="n-kcal"></td></tr>
+                      <tr><td>Grasas totales</td><td class="n-grasas"></td></tr>
+                      <tr class="nutri-sub"><td>de las cuales saturadas</td><td class="n-sat"></td></tr>
+                      <tr><td>Hidratos de carbono</td><td class="n-hc"></td></tr>
+                      <tr class="nutri-sub"><td>de los cuales azúcares</td><td class="n-az"></td></tr>
+                      <tr><td>Proteínas</td><td class="n-prot"></td></tr>
+                      <tr><td>Sal</td><td class="n-sal"></td></tr>
+                    </tbody>
+                  </table>
+                  <p class="nutri-disclaimer">* Valores referenciales. Varían según lote y temporada.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="categoria-cta">
+              <a href="https://wa.me/56963914909?text=Hola%20Mepiache,%20quiero%20consultar%20helados%20de%205%20litros" target="_blank" class="btn-wa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+                Consultar helados 5 litros
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Helados 10 Litros ── -->
+      <div class="tab-panel" id="tab-10litros" role="tabpanel">
+        <div class="categoria-bloque" id="10litros">
+          <div class="categoria-imagen">
+            <div class="img-placeholder" style="height:320px; aspect-ratio:auto;">
+              <span>🏺</span>
+              <p>Imagen helados 10 litros</p>
+            </div>
+          </div>
+          <div class="categoria-contenido">
+            <h3>Helados 10 litros</h3>
+            <p>Formato pensado para mayor cantidad, eventos, negocios o preparaciones que requieren más volumen. Mismo oficio artesanal, mayor capacidad. Haz clic en un sabor para ver su ficha.</p>
+
+            <div class="sabores-grupo">
+              <span class="sabores-grupo-titulo">Sabores disponibles según temporada y stock</span>
+              <div class="sabores-chips">
+                <button type="button" class="sabor-chip" data-sabor="chocolate-10l" data-tab="10litros">Chocolate</button>
+                <button type="button" class="sabor-chip" data-sabor="frutilla-10l" data-tab="10litros">Frutilla</button>
+                <button type="button" class="sabor-chip" data-sabor="vainilla-10l" data-tab="10litros">Vainilla</button>
+                <button type="button" class="sabor-chip" data-sabor="lucuma-10l" data-tab="10litros">Lúcuma</button>
+                <button type="button" class="sabor-chip" data-sabor="frambuesa-10l" data-tab="10litros">Frambuesa</button>
+                <button type="button" class="sabor-chip" data-sabor="chirimoya-alegre-10l" data-tab="10litros">Chirimoya Alegre</button>
+                <button type="button" class="sabor-chip" data-sabor="manjar-10l" data-tab="10litros">Manjar</button>
+              </div>
+            </div>
+
+            <p style="font-family:Arial,sans-serif; font-size:13px; color:var(--gris-suave); margin-top:8px;">
+              Sabores sujetos a disponibilidad. Consulta por WhatsApp para confirmar stock.
+            </p>
+
+            <!-- Panel detalle sabor -->
+            <div class="sabor-detalle" id="detalle-10litros" hidden>
+              <div class="sabor-detalle-header">
+                <div>
+                  <span class="sabor-detalle-tipo"></span>
+                  <h4 class="sabor-detalle-nombre"></h4>
+                  <span class="sabor-disp"></span>
+                </div>
+                <button type="button" class="sabor-detalle-cerrar" aria-label="Cerrar">×</button>
+              </div>
+              <p class="sabor-detalle-desc"></p>
+              <p class="sabor-detalle-meta"><strong>Ingredientes:</strong> <span class="ing-val"></span></p>
+              <p class="sabor-detalle-meta"><strong>Alérgenos:</strong> <span class="alerg-val"></span></p>
+              <details class="nutri-panel">
+                <summary>📊 Ver tabla nutricional (por 100 g)</summary>
+                <div class="nutri-inner">
+                  <table class="nutri-table">
+                    <tbody>
+                      <tr><td>Valor energético</td><td class="n-kcal"></td></tr>
+                      <tr><td>Grasas totales</td><td class="n-grasas"></td></tr>
+                      <tr class="nutri-sub"><td>de las cuales saturadas</td><td class="n-sat"></td></tr>
+                      <tr><td>Hidratos de carbono</td><td class="n-hc"></td></tr>
+                      <tr class="nutri-sub"><td>de los cuales azúcares</td><td class="n-az"></td></tr>
+                      <tr><td>Proteínas</td><td class="n-prot"></td></tr>
+                      <tr><td>Sal</td><td class="n-sal"></td></tr>
+                    </tbody>
+                  </table>
+                  <p class="nutri-disclaimer">* Valores referenciales. Varían según lote y temporada.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="categoria-cta">
+              <a href="https://wa.me/56963914909?text=Hola%20Mepiache,%20quiero%20consultar%20helados%20de%2010%20litros" target="_blank" class="btn-wa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+                Consultar helados 10 litros
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Gelato Chef ── -->
+      <div class="tab-panel" id="tab-gelato" role="tabpanel">
+        <div class="categoria-bloque" id="gelato">
+          <div class="categoria-imagen">
+            <img src="img/helado-frambuesa.jpg" alt="Gelato Chef Mepiache">
+          </div>
+          <div class="categoria-contenido">
+            <h3>Gelato Chef</h3>
+            <p>Línea especial en formato bocha de 5 litros, con sabores premium y alternativas especiales. Para quienes buscan algo más sofisticado, sin perder la esencia artesanal. Haz clic en un sabor para ver su ficha.</p>
+
+            <div class="sabores-grupo">
+              <span class="sabores-grupo-titulo">Sabores premium</span>
+              <div class="sabores-chips">
+                <button type="button" class="sabor-chip premium" data-sabor="vanilla-tahitiana" data-tab="gelato">Vanilla Tahitiana</button>
+                <button type="button" class="sabor-chip premium" data-sabor="vanilla-bourbon" data-tab="gelato">Vanilla Bourbon</button>
+                <button type="button" class="sabor-chip premium" data-sabor="manjar-nuez-gc" data-tab="gelato">Manjar Nuez</button>
+                <button type="button" class="sabor-chip premium" data-sabor="cookies-cream-gc" data-tab="gelato">Cookies &amp; Cream</button>
+                <button type="button" class="sabor-chip premium" data-sabor="pistacho-italiano" data-tab="gelato">Pistacho Italiano</button>
+                <button type="button" class="sabor-chip premium" data-sabor="alfajor" data-tab="gelato">Alfajor</button>
+                <button type="button" class="sabor-chip premium" data-sabor="chocolate-80" data-tab="gelato">Chocolate 80% Cacao</button>
+                <button type="button" class="sabor-chip premium" data-sabor="chocolate-nutella-gc" data-tab="gelato">Chocolate Nutella</button>
+                <button type="button" class="sabor-chip premium" data-sabor="yogurt-griego-frambuesa" data-tab="gelato">Yogurt Griego Frambuesa</button>
+              </div>
+            </div>
+
+            <div class="sabores-grupo">
+              <span class="sabores-grupo-titulo">Veganos / sin azúcar</span>
+              <div class="sabores-chips">
+                <button type="button" class="sabor-chip vegano" data-sabor="mango-maracuya-gc" data-tab="gelato">Mango Maracuyá</button>
+                <button type="button" class="sabor-chip vegano" data-sabor="frutos-bosque-gc" data-tab="gelato">Frutos del Bosque</button>
+                <button type="button" class="sabor-chip vegano" data-sabor="chocolate-sa" data-tab="gelato">Chocolate sin Azúcar</button>
+                <button type="button" class="sabor-chip vegano" data-sabor="vainilla-sa" data-tab="gelato">Vainilla sin Azúcar</button>
+                <button type="button" class="sabor-chip vegano" data-sabor="frambuesa-sa" data-tab="gelato">Frambuesa sin Azúcar</button>
+                <button type="button" class="sabor-chip vegano" data-sabor="chocolate-dark-gc" data-tab="gelato">Chocolate Dark Vegano</button>
+              </div>
+            </div>
+
+            <!-- Panel detalle sabor -->
+            <div class="sabor-detalle" id="detalle-gelato" hidden>
+              <div class="sabor-detalle-header">
+                <div>
+                  <span class="sabor-detalle-tipo"></span>
+                  <h4 class="sabor-detalle-nombre"></h4>
+                  <span class="sabor-disp"></span>
+                </div>
+                <button type="button" class="sabor-detalle-cerrar" aria-label="Cerrar">×</button>
+              </div>
+              <p class="sabor-detalle-desc"></p>
+              <p class="sabor-detalle-meta"><strong>Ingredientes:</strong> <span class="ing-val"></span></p>
+              <p class="sabor-detalle-meta"><strong>Alérgenos:</strong> <span class="alerg-val"></span></p>
+              <details class="nutri-panel">
+                <summary>📊 Ver tabla nutricional (por 100 g)</summary>
+                <div class="nutri-inner">
+                  <table class="nutri-table">
+                    <tbody>
+                      <tr><td>Valor energético</td><td class="n-kcal"></td></tr>
+                      <tr><td>Grasas totales</td><td class="n-grasas"></td></tr>
+                      <tr class="nutri-sub"><td>de las cuales saturadas</td><td class="n-sat"></td></tr>
+                      <tr><td>Hidratos de carbono</td><td class="n-hc"></td></tr>
+                      <tr class="nutri-sub"><td>de los cuales azúcares</td><td class="n-az"></td></tr>
+                      <tr><td>Proteínas</td><td class="n-prot"></td></tr>
+                      <tr><td>Sal</td><td class="n-sal"></td></tr>
+                    </tbody>
+                  </table>
+                  <p class="nutri-disclaimer">* Valores referenciales. Varían según lote y temporada.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="categoria-cta">
+              <a href="https://wa.me/56963914909?text=Hola%20Mepiache,%20quiero%20consultar%20el%20Gelato%20Chef" target="_blank" class="btn-wa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.797-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+                Consultar Gelato Chef
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Sustancias ── -->
+      <div class="tab-panel" id="tab-sustancias" role="tabpanel">
+        <div class="categoria-bloque" id="sustancias">
+          <div class="categoria-imagen">
+            <img src="img/helados-invierno.jpg" alt="Sustancias Mepiache">
+          </div>
+          <div class="categoria-contenido">
+            <h3>Sustancias</h3>
+            <p>Una línea tradicional de Mepiache, ligada a los productos clásicos, confites y helados de invierno. Golosina típica chilena de textura suave y esponjosa, elaborada con claras de huevo, azúcar, agua y colapez. Haz clic en un tipo para ver su ficha.</p>
+
+            <div class="sabores-grupo">
+              <span class="sabores-grupo-titulo">Tipos y presentaciones</span>
+              <div class="sabores-chips">
+                <button type="button" class="sabor-chip" data-sabor="sustancia-tradicional" data-tab="sustancias">Sustancia tradicional</button>
+                <button type="button" class="sabor-chip" data-sabor="helados-invierno" data-tab="sustancias">Helados de invierno</button>
+                <button type="button" class="sabor-chip" data-sabor="confites-tradicionales" data-tab="sustancias">Confites tradicionales</button>
+                <button type="button" class="sabor-chip" data-sabor="formato-individual" data-tab="sustancias">Formato individual</button>
+                <button type="button" class="sabor-chip" data-sabor="formato-compartir" data-tab="sustancias">Formato para compartir</button>
+              </div>
+            </div>
+
+            <div style="background:var(--crema-suave); border-radius:10px; padding:16px 20px; margin:20px 0; border-left:3px solid var(--dorado);">
+              <p style="font-family:Arial,sans-serif; font-size:14px; color:var(--gris-texto); margin:0;">
+                <strong style="color:var(--cafe);" data-config="precio-sustancia">$5.000 CLP</strong> · Temporada invierno
+              </p>
+            </div>
+
+            <!-- Panel detalle sabor -->
+            <div class="sabor-detalle" id="detalle-sustancias" hidden>
+              <div class="sabor-detalle-header">
+                <div>
+                  <span class="sabor-detalle-tipo"></span>
+                  <h4 class="sabor-detalle-nombre"></h4>
+                  <span class="sabor-disp"></span>
+                </div>
+                <button type="button" class="sabor-detalle-cerrar" aria-label="Cerrar">×</button>
+              </div>
+              <p class="sabor-detalle-desc"></p>
+              <p class="sabor-detalle-meta"><strong>Ingredientes:</strong> <span class="ing-val"></span></p>
+              <p class="sabor-detalle-meta"><strong>Alérgenos:</strong> <span class="alerg-val"></span></p>
+              <details class="nutri-panel">
+                <summary>📊 Ver tabla nutricional (por 100 g)</summary>
+                <div class="nutri-inner">
+                  <table class="nutri-table">
+                    <tbody>
+                      <tr><td>Valor energético</td><td class="n-kcal"></td></tr>
+                      <tr><td>Grasas totales</td><td class="n-grasas"></td></tr>
+                      <tr class="nutri-sub"><td>de las cuales saturadas</td><td class="n-sat"></td></tr>
+                      <tr><td>Hidratos de carbono</td><td class="n-hc"></td></tr>
+                      <tr class="nutri-sub"><td>de los cuales azúcares</td><td class="n-az"></td></tr>
+                      <tr><td>Proteínas</td><td class="n-prot"></td></tr>
+                      <tr><td>Sal</td><td class="n-sal"></td></tr>
+                    </tbody>
+                  </table>
+                  <p class="nutri-disclaimer">* Valores referenciales. Varían según lote y temporada.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="categoria-cta">
+              <a href="https://wa.me/56963914909?text=Hola%20Mepiache,%20quiero%20consultar%20las%20sustancias" target="_blank" class="btn-wa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+                Consultar sustancias
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════ FOOTER ════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="logo.png" alt="Mepiache" class="footer-logo">
+      <p class="footer-tagline" data-config="tagline">Helados artesanales con historia desde 1954</p>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Nuestra historia</a>
+        <a href="productos.html">Productos</a>
+        <a href="visitanos.html">Visítanos</a>
+        <a href="b2b.html">Para empresas</a>
+      </div>
+      <p class="footer-datos" data-config="direccion">Álvarez de Toledo 410, San Joaquín, Santiago</p>
+      <p class="footer-copy" data-config="copyright">© 2026 Mepiache. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/56963914909?text=Hola%20Mepiache" target="_blank" class="wa-flotante" title="Escribir por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+  </a>
+
+  <script src="config.js"></script>
+  <script>
+    window.addEventListener('scroll', function () {
+      document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 40);
+    });
+    var menuToggle = document.querySelector('.menu-toggle');
+    var headerEl   = document.querySelector('.header');
+    menuToggle.addEventListener('click', function () {
+      var open = headerEl.classList.toggle('menu-abierto');
+      this.setAttribute('aria-expanded', String(open));
+    });
+    document.querySelectorAll('.nav-item > a').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        if (window.innerWidth <= 768) { e.preventDefault(); this.closest('.nav-item').classList.toggle('abierto'); }
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-item')) document.querySelectorAll('.nav-item').forEach(function(n) { n.classList.remove('abierto'); });
+      if (!e.target.closest('.header')) { headerEl.classList.remove('menu-abierto'); menuToggle.setAttribute('aria-expanded', 'false'); }
+    });
+
+    document.querySelectorAll('.tab-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('activo'); });
+        document.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('activo'); });
+        this.classList.add('activo');
+        document.getElementById('tab-' + this.dataset.tab).classList.add('activo');
+        // Cerrar panel de detalle al cambiar de tab y restaurar imagen
+        document.querySelectorAll('.sabor-detalle').forEach(function (d) { d.hidden = true; d.dataset.current = ''; });
+        document.querySelectorAll('.sabor-chip').forEach(function (c) { c.classList.remove('activo'); });
+        Object.keys(tabDefaultImgs).forEach(function (tid) { restaurarImagen(tid); });
+      });
+    });
+
+    // Abrir tab correcto si viene desde un anchor
+    var hash = window.location.hash.replace('#', '');
+    var tabMap = { paletas:'paletas', '5litros':'5litros', '10litros':'10litros', gelato:'gelato', sustancias:'sustancias' };
+    if (tabMap[hash]) {
+      document.querySelectorAll('.tab-btn').forEach(function (b) { b.classList.remove('activo'); });
+      document.querySelectorAll('.tab-panel').forEach(function (p) { p.classList.remove('activo'); });
+      document.querySelector('[data-tab="' + tabMap[hash] + '"]').classList.add('activo');
+      document.getElementById('tab-' + tabMap[hash]).classList.add('activo');
+    }
+
+    // ── Disponibilidad (configurado en config.js → MEPIACHE) ────────
+    var dispInfo = {
+      disponible: { label:'Disponible ahora',  cls:'disp-disponible' },
+      temporada:  { label:'Solo en temporada', cls:'disp-temporada'  },
+      encargo:    { label:'Por encargo',       cls:'disp-encargo'    }
+    };
+    function getDisp(key, tabId) {
+      return (MEPIACHE.dispOverrides[key]) || (MEPIACHE.dispDefaults[tabId]) || 'disponible';
+    }
+
+    // ── Datos de sabores ────────────────────────────
+    var sabores = {
+      // PALETAS — FRUTALES
+      'mango-maracuya':        { nombre:'Mango Maracuyá',         tipo:'Paleta frutal',               desc:'Sabor tropical intenso con el dulce del mango y la acidez del maracuyá. Refrescante y frutal.',                                                              ing:'Pulpa de mango, pulpa de maracuyá, azúcar, agua.',                                              alerge:'Sin alérgenos. Apto vegano.',                                                               n:{ e:92,  g:0.2, s:0.1, hc:22, az:20, p:0.4, sal:0.02 } },
+      'frambuesa-huerto':      { nombre:'Frambuesa del huerto',   tipo:'Paleta frutal',               desc:'Frambuesa fresca con notas ácidas y un dulzor natural. Intenso y vibrante.',                                                                                 ing:'Pulpa de frambuesa, azúcar, agua, zumo de limón.',                                             alerge:'Sin alérgenos. Apto vegano.',                                                               n:{ e:88,  g:0.3, s:0.1, hc:21, az:19, p:0.5, sal:0.02 } },
+      'frutilla-natural':      { nombre:'Frutilla natural',       tipo:'Paleta frutal',               desc:'Clásica frutilla artesanal, dulce y fresca, con el sabor característico de la fruta de temporada.',                                                          ing:'Puré de frutilla, azúcar, agua.',                                                              alerge:'Sin alérgenos. Apto vegano.',                                                               n:{ e:85,  g:0.2, s:0.1, hc:20, az:18, p:0.4, sal:0.02 } },
+      'limon-menta-jengibre':  { nombre:'Limón Menta Jengibre',   tipo:'Paleta frutal',               desc:'Combinación refrescante de limón ácido, menta fresca y el toque picante del jengibre.',                                                                      ing:'Zumo de limón, menta fresca, jengibre, azúcar, agua.',                                         alerge:'Sin alérgenos. Apto vegano.',                                                               n:{ e:80,  g:0.1, s:0.0, hc:19, az:17, p:0.2, sal:0.02 } },
+      'pina-caramelo':         { nombre:'Piña Caramelo',          tipo:'Paleta frutal',               desc:'La acidez de la piña tropical equilibrada con notas acarameladas. Dulce y sorprendente.',                                                                     ing:'Pulpa de piña, azúcar caramelizada, agua.',                                                    alerge:'Sin alérgenos. Apto vegano.',                                                               n:{ e:98,  g:0.2, s:0.1, hc:24, az:22, p:0.3, sal:0.03 } },
+      'pina-albahaca':         { nombre:'Piña Albahaca',          tipo:'Paleta frutal',               desc:'Piña refrescante con el aroma herbal de la albahaca fresca. Una combinación inesperada y elegante.',                                                          ing:'Pulpa de piña, albahaca fresca, azúcar, agua.',                                                alerge:'Sin alérgenos. Apto vegano.',                                                               n:{ e:90,  g:0.2, s:0.1, hc:21, az:19, p:0.3, sal:0.02 } },
+      'frutos-bosque':         { nombre:'Frutos del bosque',      tipo:'Paleta frutal',               desc:'Mezcla de berries silvestres con un sabor profundo, ácido y ligeramente dulce.',                                                                              ing:'Frambuesa, mora, arándano, azúcar, agua.',                                                     alerge:'Sin alérgenos. Apto vegano.',                                                               n:{ e:90,  g:0.3, s:0.1, hc:21, az:19, p:0.5, sal:0.02 } },
+      // PALETAS — CREMA
+      'chocolate-nutella':     { nombre:'Chocolate Nutella',      tipo:'Paleta crema',                desc:'Intenso chocolate con avellanas y el inconfundible sabor de la Nutella. Cremoso y goloso.',                                                                    ing:'Leche, crema, cacao, Nutella (avellanas, azúcar, cacao, leche), azúcar.',                      alerge:'Contiene leche, avellanas. Puede contener trazas de gluten.',                               n:{ e:195, g:10,  s:5.5, hc:24, az:22, p:3.0, sal:0.12 } },
+      'manjar-nuez':           { nombre:'Manjar Nuez',            tipo:'Paleta crema',                desc:'El dulzor profundo del manjar artesanal con el crocante y tostado de las nueces.',                                                                             ing:'Leche condensada, crema, nueces, azúcar.',                                                     alerge:'Contiene leche, nueces (frutos secos).',                                                    n:{ e:205, g:11,  s:5.8, hc:25, az:23, p:3.2, sal:0.10 } },
+      'pistacho':              { nombre:'Pistacho',               tipo:'Paleta crema',                desc:'Cremoso y suave con el sabor tostado y ligeramente salado del pistacho auténtico.',                                                                            ing:'Leche, crema, pasta de pistacho, azúcar.',                                                     alerge:'Contiene leche, pistacho (frutos secos).',                                                  n:{ e:200, g:10.5,s:5.2, hc:23, az:20, p:3.5, sal:0.13 } },
+      'cookies-cream':         { nombre:'Cookies & Cream',        tipo:'Paleta crema',                desc:'Cremoso helado de vainilla con trozos de galleta de chocolate. Dulce y crocante.',                                                                             ing:'Leche, crema, azúcar, galleta de chocolate (trigo, cacao), vainilla.',                         alerge:'Contiene leche, gluten (trigo).',                                                           n:{ e:210, g:10,  s:5.5, hc:27, az:22, p:2.8, sal:0.18 } },
+      'vainilla':              { nombre:'Vainilla',               tipo:'Paleta crema',                desc:'Clásica y cremosa vainilla artesanal con aroma natural. El sabor de siempre.',                                                                                 ing:'Leche, crema, azúcar, vainilla natural.',                                                      alerge:'Contiene leche.',                                                                           n:{ e:175, g:8.5, s:5.0, hc:22, az:20, p:2.8, sal:0.10 } },
+      'bombon-frambuesa':      { nombre:'Bombón Frambuesa',       tipo:'Paleta crema',                desc:'Crema suave con corazón de frambuesa ácida, cubierto en chocolate. Sorpresa en cada mordida.',                                                                 ing:'Leche, crema, pulpa de frambuesa, chocolate (cacao, azúcar, manteca de cacao), azúcar.',       alerge:'Contiene leche. Puede contener trazas de frutos secos.',                                    n:{ e:215, g:11,  s:6.5, hc:26, az:24, p:2.5, sal:0.09 } },
+      // PALETAS — VEGANAS
+      'chocolate-dark-vegano': { nombre:'Chocolate Dark Vegano',  tipo:'Paleta vegana · Sin azúcar',  desc:'Chocolate oscuro intenso al 70%, sin lácteos ni azúcar añadida. Para los amantes del cacao puro.',                                                            ing:'Agua, cacao 70%, leche de coco, eritritol, estevia.',                                          alerge:'Sin alérgenos. Apto vegano. Sin azúcar añadida.',                                           n:{ e:105, g:5.5, s:3.5, hc:11, az:0,  p:2.0, sal:0.05 } },
+      'maracuya-pina':         { nombre:'Maracuyá Piña',          tipo:'Paleta vegana · Sin azúcar',  desc:'Combo tropical refrescante y ácido. Sin azúcar añadida, todo el sabor de la fruta natural.',                                                                  ing:'Pulpa de maracuyá, pulpa de piña, agua, eritritol.',                                           alerge:'Sin alérgenos. Apto vegano. Sin azúcar añadida.',                                           n:{ e:42,  g:0.1, s:0.0, hc:9,  az:0,  p:0.3, sal:0.01 } },
+      'frutilla-frambuesa':    { nombre:'Frutilla Frambuesa',     tipo:'Paleta vegana · Sin azúcar',  desc:'Fresco y ácido con la intensidad de dos berries. Sin azúcar, sin lácteos.',                                                                                   ing:'Pulpa de frutilla, pulpa de frambuesa, agua, eritritol.',                                      alerge:'Sin alérgenos. Apto vegano. Sin azúcar añadida.',                                           n:{ e:40,  g:0.2, s:0.1, hc:8,  az:0,  p:0.4, sal:0.01 } },
+      // 5 LITROS
+      'arroz-leche':           { nombre:'Arroz con leche',        tipo:'Helado 5 litros',             desc:'El postre clásico chileno en formato helado. Cremoso, suave y especiado con canela.',                                                                          ing:'Leche, crema, arroz, azúcar, canela, piel de limón.',                                          alerge:'Contiene leche.',                                                                           n:{ e:185, g:7.5, s:4.8, hc:27, az:20, p:3.5, sal:0.15 } },
+      'banana-split':          { nombre:'Banana Split',           tipo:'Helado 5 litros',             desc:'Helado de banana con notas de crema y fruta. Dulce, frutal y nostálgico.',                                                                                     ing:'Leche, crema, pulpa de banana, azúcar, vainilla.',                                             alerge:'Contiene leche.',                                                                           n:{ e:190, g:8.0, s:5.0, hc:27, az:24, p:2.8, sal:0.10 } },
+      'cafe-capuchino':        { nombre:'Café Capuchino',         tipo:'Helado 5 litros',             desc:'Intenso sabor a café con notas de leche cremosa. Perfecto para los amantes del café.',                                                                          ing:'Leche, crema, extracto de café, azúcar.',                                                      alerge:'Contiene leche.',                                                                           n:{ e:188, g:8.5, s:5.2, hc:24, az:22, p:3.2, sal:0.12 } },
+      'chirimoya-alegre':      { nombre:'Chirimoya Alegre',       tipo:'Helado 5 litros',             desc:'La chirimoya tropical con un toque de naranja. Frutal, aromático y muy chileno.',                                                                              ing:'Pulpa de chirimoya, zumo de naranja, azúcar, leche, crema.',                                   alerge:'Contiene leche.',                                                                           n:{ e:175, g:6.5, s:4.2, hc:27, az:24, p:2.5, sal:0.08 } },
+      'chocolate-clasico':     { nombre:'Chocolate Clásico',      tipo:'Helado 5 litros',             desc:'Helado de chocolate cremoso con sabor intenso y equilibrado. El clásico de los clásicos.',                                                                     ing:'Leche, crema, cacao en polvo, azúcar, yema de huevo.',                                         alerge:'Contiene leche, huevo.',                                                                    n:{ e:198, g:9.5, s:5.8, hc:25, az:22, p:3.5, sal:0.12 } },
+      'frambuesa-5l':          { nombre:'Frambuesa',              tipo:'Helado 5 litros',             desc:'Refrescante helado de frambuesa, con el equilibrio justo entre acidez y dulzor.',                                                                              ing:'Pulpa de frambuesa, leche, azúcar, crema, zumo de limón.',                                     alerge:'Contiene leche.',                                                                           n:{ e:170, g:6.0, s:3.8, hc:26, az:23, p:2.2, sal:0.08 } },
+      'frutos-bosque-5l':      { nombre:'Frutos del Bosque',      tipo:'Helado 5 litros',             desc:'Mezcla cremosa de berries con profundidad de sabor y color vibrante.',                                                                                         ing:'Mezcla de berries, leche, crema, azúcar.',                                                     alerge:'Contiene leche.',                                                                           n:{ e:172, g:6.2, s:3.9, hc:26, az:23, p:2.4, sal:0.08 } },
+      'lucuma-manjar':         { nombre:'Lúcuma Manjar',          tipo:'Helado 5 litros',             desc:'La combinación más chilena: lúcuma suave y el dulzor profundo del manjar artesanal.',                                                                          ing:'Leche, crema, pulpa de lúcuma, manjar (leche condensada), azúcar.',                            alerge:'Contiene leche.',                                                                           n:{ e:210, g:9.0, s:5.5, hc:30, az:27, p:3.2, sal:0.12 } },
+      'pina-agua':             { nombre:'Piña al Agua',           tipo:'Helado 5 litros',             desc:'Helado al agua de piña, muy refrescante y ligero. Sin crema, sabor puro de fruta.',                                                                            ing:'Pulpa de piña, agua, azúcar, zumo de limón.',                                                  alerge:'Sin alérgenos. Apto vegano.',                                                               n:{ e:90,  g:0.2, s:0.1, hc:22, az:20, p:0.3, sal:0.02 } },
+      'pistacho-5l':           { nombre:'Pistacho',               tipo:'Helado 5 litros',             desc:'Cremoso helado de pistacho con aroma tostado y textura sedosa.',                                                                                               ing:'Leche, crema, pasta de pistacho, azúcar.',                                                     alerge:'Contiene leche, pistacho (frutos secos).',                                                  n:{ e:205, g:10.5,s:5.3, hc:23, az:20, p:3.8, sal:0.13 } },
+      'vainilla-5l':           { nombre:'Vainilla',               tipo:'Helado 5 litros',             desc:'Vainilla artesanal cremosa con aroma natural. El clásico que nunca falla.',                                                                                    ing:'Leche, crema, azúcar, vainilla natural.',                                                      alerge:'Contiene leche.',                                                                           n:{ e:178, g:8.5, s:5.0, hc:23, az:21, p:2.8, sal:0.10 } },
+      // 10 LITROS
+      'chocolate-10l':         { nombre:'Chocolate',              tipo:'Helado 10 litros',            desc:'Helado de chocolate artesanal, cremoso e intenso, en formato gran volumen.',                                                                                   ing:'Leche, crema, cacao, azúcar, huevo.',                                                          alerge:'Contiene leche, huevo.',                                                                    n:{ e:195, g:9.0, s:5.5, hc:25, az:22, p:3.4, sal:0.12 } },
+      'frutilla-10l':          { nombre:'Frutilla',               tipo:'Helado 10 litros',            desc:'Frutilla artesanal clásica en gran formato. Fresco y dulce.',                                                                                                  ing:'Puré de frutilla, leche, crema, azúcar.',                                                      alerge:'Contiene leche.',                                                                           n:{ e:168, g:5.8, s:3.6, hc:26, az:23, p:2.2, sal:0.08 } },
+      'vainilla-10l':          { nombre:'Vainilla',               tipo:'Helado 10 litros',            desc:'La vainilla artesanal de siempre en formato 10 litros para mayor rendimiento.',                                                                                ing:'Leche, crema, azúcar, vainilla natural.',                                                      alerge:'Contiene leche.',                                                                           n:{ e:178, g:8.5, s:5.0, hc:23, az:21, p:2.8, sal:0.10 } },
+      'lucuma-10l':            { nombre:'Lúcuma',                 tipo:'Helado 10 litros',            desc:'Lúcuma pura y cremosa con el sabor característico de esta fruta chilena única.',                                                                               ing:'Leche, crema, pulpa de lúcuma, azúcar.',                                                       alerge:'Contiene leche.',                                                                           n:{ e:192, g:8.0, s:4.9, hc:27, az:24, p:2.8, sal:0.09 } },
+      'frambuesa-10l':         { nombre:'Frambuesa',              tipo:'Helado 10 litros',            desc:'Frambuesa fresca y ácida en gran formato, perfecto para negocios y eventos.',                                                                                  ing:'Pulpa de frambuesa, leche, crema, azúcar.',                                                    alerge:'Contiene leche.',                                                                           n:{ e:170, g:6.0, s:3.8, hc:26, az:23, p:2.2, sal:0.08 } },
+      'chirimoya-alegre-10l':  { nombre:'Chirimoya Alegre',       tipo:'Helado 10 litros',            desc:'Chirimoya con naranja, el sabor más chileno en formato de mayor volumen.',                                                                                     ing:'Pulpa de chirimoya, naranja, leche, crema, azúcar.',                                           alerge:'Contiene leche.',                                                                           n:{ e:175, g:6.5, s:4.2, hc:27, az:24, p:2.5, sal:0.08 } },
+      'manjar-10l':            { nombre:'Manjar',                 tipo:'Helado 10 litros',            desc:'El dulzor irresistible del manjar artesanal en helado. Cremoso y profundo.',                                                                                   ing:'Leche condensada, crema, leche, azúcar.',                                                      alerge:'Contiene leche.',                                                                           n:{ e:218, g:9.5, s:6.0, hc:31, az:28, p:3.5, sal:0.13 } },
+      // GELATO CHEF — PREMIUM
+      'vanilla-tahitiana':     { nombre:'Vanilla Tahitiana',      tipo:'Gelato Chef · Premium',       desc:'Vainilla de Tahití con aroma floral excepcional. Más compleja y perfumada que la vainilla clásica.',                                                           ing:'Leche entera, crema, azúcar, vaina de vainilla de Tahití, yema de huevo.',                     alerge:'Contiene leche, huevo.',                                                                    n:{ e:218, g:11,  s:6.8, hc:26, az:23, p:3.8, sal:0.10 } },
+      'vanilla-bourbon':       { nombre:'Vanilla Bourbon',        tipo:'Gelato Chef · Premium',       desc:'Vainilla de Madagascar con sabor cálido, cremoso y notas a caramelo.',                                                                                         ing:'Leche entera, crema, azúcar, extracto de vainilla Bourbon, yema de huevo.',                    alerge:'Contiene leche, huevo.',                                                                    n:{ e:215, g:11,  s:6.8, hc:25, az:22, p:3.8, sal:0.10 } },
+      'manjar-nuez-gc':        { nombre:'Manjar Nuez',            tipo:'Gelato Chef · Premium',       desc:'Manjar artesanal con nueces caramelizadas. Profundo, dulce y con textura irresistible.',                                                                       ing:'Leche, crema, manjar (leche condensada), nueces caramelizadas, azúcar.',                       alerge:'Contiene leche, nueces (frutos secos).',                                                    n:{ e:235, g:13,  s:7.2, hc:28, az:26, p:4.0, sal:0.12 } },
+      'cookies-cream-gc':      { nombre:'Cookies & Cream',        tipo:'Gelato Chef · Premium',       desc:'Gelato de vainilla premium con grandes trozos de galleta de chocolate artesanal.',                                                                             ing:'Leche, crema, azúcar, galleta chocolate artesanal, vainilla Bourbon.',                         alerge:'Contiene leche, gluten (trigo).',                                                           n:{ e:230, g:11,  s:6.5, hc:30, az:25, p:3.5, sal:0.20 } },
+      'pistacho-italiano':     { nombre:'Pistacho Italiano',      tipo:'Gelato Chef · Premium',       desc:'Pasta de pistacho siciliano DOP. El auténtico gelato italiano con sabor intenso y color natural.',                                                             ing:'Leche, crema, pasta de pistacho siciliano (100% pistacho), azúcar.',                           alerge:'Contiene leche, pistacho (frutos secos).',                                                  n:{ e:228, g:13,  s:6.0, hc:23, az:19, p:5.0, sal:0.13 } },
+      'alfajor':               { nombre:'Alfajor',                tipo:'Gelato Chef · Premium',       desc:'Gelato de manjar con trozos de galleta de alfajor. El sabor más chileno en versión premium.',                                                                  ing:'Leche, crema, manjar, galleta de maicena (maíz, azúcar), azúcar.',                             alerge:'Contiene leche.',                                                                           n:{ e:238, g:11,  s:6.5, hc:33, az:28, p:3.5, sal:0.15 } },
+      'chocolate-80':          { nombre:'Chocolate 80% Cacao',    tipo:'Gelato Chef · Premium',       desc:'Intensidad pura del cacao al 80%. Amargo, profundo y equilibrado para los verdaderos chocolateros.',                                                           ing:'Leche, crema, chocolate 80% cacao (cacao, manteca de cacao, azúcar), azúcar.',                 alerge:'Contiene leche. Puede contener trazas de frutos secos.',                                    n:{ e:232, g:14,  s:8.5, hc:22, az:18, p:4.5, sal:0.08 } },
+      'chocolate-nutella-gc':  { nombre:'Chocolate Nutella',      tipo:'Gelato Chef · Premium',       desc:'Gelato premium de Nutella y chocolate. Más intenso y cremoso que la versión clásica.',                                                                         ing:'Leche, crema, Nutella (avellanas, cacao, azúcar, leche), chocolate, azúcar.',                  alerge:'Contiene leche, avellanas. Puede contener trazas de gluten.',                               n:{ e:248, g:14,  s:8.0, hc:28, az:25, p:4.2, sal:0.13 } },
+      'yogurt-griego-frambuesa':{ nombre:'Yogurt Griego Frambuesa',tipo:'Gelato Chef · Premium',      desc:'La acidez del yogurt griego con la intensidad de la frambuesa fresca. Fresco, suave y equilibrado.',                                                           ing:'Yogurt griego, crema, pulpa de frambuesa, azúcar, leche.',                                     alerge:'Contiene leche.',                                                                           n:{ e:168, g:5.5, s:3.5, hc:24, az:21, p:5.5, sal:0.10 } },
+      // GELATO CHEF — VEGANO/SIN AZÚCAR
+      'mango-maracuya-gc':     { nombre:'Mango Maracuyá',         tipo:'Gelato Chef · Vegano',        desc:'Sorbete premium de mango y maracuyá, sin lácteos ni azúcar añadida. Tropical y refrescante.',                                                                  ing:'Pulpa de mango, pulpa de maracuyá, agua, eritritol.',                                          alerge:'Sin alérgenos. Apto vegano. Sin azúcar añadida.',                                           n:{ e:55,  g:0.2, s:0.1, hc:12, az:0,  p:0.5, sal:0.02 } },
+      'frutos-bosque-gc':      { nombre:'Frutos del Bosque',      tipo:'Gelato Chef · Vegano',        desc:'Sorbete de berries mixtos, sin azúcar ni lácteos. Profundo, ácido y naturalmente colorido.',                                                                   ing:'Mezcla de berries, agua, eritritol, zumo de limón.',                                           alerge:'Sin alérgenos. Apto vegano. Sin azúcar añadida.',                                           n:{ e:50,  g:0.3, s:0.1, hc:10, az:0,  p:0.6, sal:0.02 } },
+      'chocolate-sa':          { nombre:'Chocolate sin Azúcar',   tipo:'Gelato Chef · Sin azúcar',    desc:'Gelato de cacao intenso sin azúcar añadida. Con leche de coco para textura cremosa.',                                                                          ing:'Leche de coco, cacao, eritritol, estevia.',                                                    alerge:'Sin gluten. Sin azúcar añadida. Contiene coco.',                                            n:{ e:98,  g:5.5, s:4.0, hc:10, az:0,  p:1.8, sal:0.05 } },
+      'vainilla-sa':           { nombre:'Vainilla sin Azúcar',    tipo:'Gelato Chef · Sin azúcar',    desc:'Gelato cremoso de vainilla sin azúcar. Suave y aromático para quienes cuidan su consumo.',                                                                     ing:'Leche, crema, vainilla natural, eritritol, estevia.',                                          alerge:'Contiene leche. Sin azúcar añadida.',                                                       n:{ e:105, g:6.0, s:3.8, hc:9,  az:0,  p:3.0, sal:0.10 } },
+      'frambuesa-sa':          { nombre:'Frambuesa sin Azúcar',   tipo:'Gelato Chef · Sin azúcar',    desc:'Refrescante gelato de frambuesa sin azúcar. Toda la acidez y el sabor natural.',                                                                               ing:'Pulpa de frambuesa, leche, eritritol, zumo de limón.',                                         alerge:'Contiene leche. Sin azúcar añadida.',                                                       n:{ e:72,  g:2.0, s:1.2, hc:10, az:0,  p:2.0, sal:0.08 } },
+      'chocolate-dark-gc':     { nombre:'Chocolate Dark Vegano',  tipo:'Gelato Chef · Vegano',        desc:'Sorbete intenso de cacao dark sin lácteos. Para los amantes del chocolate sin concesiones.',                                                                   ing:'Agua, cacao 70%, leche de coco, eritritol, estevia.',                                          alerge:'Sin alérgenos. Apto vegano. Sin azúcar añadida.',                                           n:{ e:110, g:6.0, s:4.0, hc:12, az:0,  p:2.0, sal:0.05 } },
+      // SUSTANCIAS
+      'sustancia-tradicional': { nombre:'Sustancia tradicional',  tipo:'Sustancias Mepiache',         desc:'La golosina clásica de Mepiache. Textura esponjosa, suave y melosa, una tradición chilena de invierno.',                                                       ing:'Azúcar, agua, claras de huevo, colapez (gelatina animal).',                                    alerge:'Contiene huevo. Sin lactosa. Sin gluten.',                                                  n:{ e:340, g:0,   s:0,   hc:82, az:79, p:5.5, sal:0.05 } },
+      'helados-invierno':      { nombre:'Helados de invierno',    tipo:'Sustancias Mepiache',         desc:'Versión cálida y reconfortante para los meses fríos. La tradición Mepiache en formato invernal.',                                                               ing:'Azúcar, agua, claras de huevo, colapez, aromas naturales.',                                    alerge:'Contiene huevo. Sin lactosa. Sin gluten.',                                                  n:{ e:335, g:0,   s:0,   hc:81, az:78, p:5.2, sal:0.05 } },
+      'confites-tradicionales':{ nombre:'Confites tradicionales', tipo:'Sustancias Mepiache',         desc:'Confites artesanales con la textura y dulzor que distinguen a Mepiache desde siempre.',                                                                         ing:'Azúcar, glucosa, agua, aromas naturales, colorantes naturales.',                               alerge:'Sin alérgenos. Sin gluten. Sin lactosa.',                                                   n:{ e:380, g:0,   s:0,   hc:95, az:92, p:0,   sal:0.02 } },
+      'formato-individual':    { nombre:'Formato individual',     tipo:'Sustancias Mepiache',         desc:'Porción individual de sustancia tradicional, ideal para consumo personal y regalo.',                                                                            ing:'Azúcar, agua, claras de huevo, colapez.',                                                      alerge:'Contiene huevo. Sin lactosa. Sin gluten.',                                                  n:{ e:340, g:0,   s:0,   hc:82, az:79, p:5.5, sal:0.05 } },
+      'formato-compartir':     { nombre:'Formato para compartir', tipo:'Sustancias Mepiache',         desc:'Presentación familiar de las sustancias Mepiache, pensada para compartir entre varios.',                                                                        ing:'Azúcar, agua, claras de huevo, colapez.',                                                      alerge:'Contiene huevo. Sin lactosa. Sin gluten.',                                                  n:{ e:340, g:0,   s:0,   hc:82, az:79, p:5.5, sal:0.05 } }
+    };
+
+    // ── Tags por chip ───────────────────────────────
+    function getChipTags(key, btn) {
+      var tags = [];
+      var d = sabores[key];
+      if (!d) return tags;
+      var tipo   = d.tipo.toLowerCase();
+      var alerge = d.alerge.toLowerCase();
+      if (btn.classList.contains('vegano') || tipo.includes('vegano')) tags.push('vegano');
+      if (btn.classList.contains('premium') || tipo.includes('premium')) tags.push('premium');
+      if (alerge.includes('sin azúcar') || tipo.includes('sin azúcar')) tags.push('sin-azucar');
+      if (!alerge.includes('contiene leche') && !tipo.includes('sustancia') && !tipo.includes('confite') && !tipo.includes('formato')) tags.push('frutal');
+      if (alerge.includes('contiene leche')) tags.push('crema');
+      return tags;
+    }
+
+    var tagLabels = { vegano:'🌱 Vegano', premium:'✦ Premium', 'sin-azucar':'○ Sin azúcar', frutal:'🍓 Frutal', crema:'🍦 Cremoso' };
+
+    // Ocultar sabores indicados en config.js → MEPIACHE.saboresOcultos
+    (MEPIACHE.saboresOcultos || []).forEach(function(key) {
+      document.querySelectorAll('.sabor-chip[data-sabor="' + key + '"]').forEach(function(btn) {
+        btn.style.display = 'none';
+      });
+    });
+
+    // Asignar data-tags e íconos a cada chip
+    document.querySelectorAll('.sabor-chip').forEach(function(btn) {
+      var tags = getChipTags(btn.dataset.sabor, btn);
+      btn.dataset.tags = tags.join(' ');
+      var icons = '';
+      if (tags.includes('vegano'))   icons += '<span class="chip-tag chip-tag-vegano">🌱</span>';
+      if (tags.includes('premium'))  icons += '<span class="chip-tag chip-tag-premium">✦</span>';
+      if (tags.includes('sin-azucar') && !tags.includes('vegano')) icons += '<span class="chip-tag chip-tag-sinaz">○</span>';
+      if (icons) btn.innerHTML = icons + btn.textContent;
+    });
+
+    // Construir barras de filtro por tab
+    function buildFilterBar(tabId) {
+      var panel = document.getElementById('tab-' + tabId);
+      if (!panel) return;
+      var contenido = panel.querySelector('.categoria-contenido');
+      if (!contenido) return;
+      var chips = panel.querySelectorAll('.sabor-chip');
+      var tagSet = {};
+      chips.forEach(function(c) { (c.dataset.tags || '').split(' ').forEach(function(t) { if (t) tagSet[t] = true; }); });
+      var relevantes = Object.keys(tagSet).filter(function(t) { return tagLabels[t]; });
+      if (relevantes.length < 2) return;
+
+      var bar = document.createElement('div');
+      bar.className = 'filtros-bar';
+      bar.innerHTML = '<span class="filtros-label">Filtrar</span>';
+
+      function makeBtn(filtro, label) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'filtro-btn'; b.dataset.filtro = filtro; b.textContent = label;
+        if (filtro === 'todos') b.classList.add('activo');
+        b.addEventListener('click', function() {
+          bar.querySelectorAll('.filtro-btn').forEach(function(x) { x.classList.remove('activo'); });
+          b.classList.add('activo');
+          var f = b.dataset.filtro;
+          chips.forEach(function(c) {
+            var chipTags = (c.dataset.tags || '').split(' ');
+            c.style.display = (f === 'todos' || chipTags.includes(f)) ? '' : 'none';
+          });
+          panel.querySelectorAll('.sabores-grupo').forEach(function(g) {
+            var anyVis = Array.from(g.querySelectorAll('.sabor-chip')).some(function(c) {
+              return f === 'todos' || (c.dataset.tags || '').split(' ').includes(f);
+            });
+            g.style.display = anyVis ? '' : 'none';
+          });
+        });
+        return b;
+      }
+
+      bar.appendChild(makeBtn('todos', 'Todos'));
+      relevantes.forEach(function(t) { bar.appendChild(makeBtn(t, tagLabels[t])); });
+
+      var firstGrupo = contenido.querySelector('.sabores-grupo');
+      if (firstGrupo) contenido.insertBefore(bar, firstGrupo);
+    }
+
+    ['paletas', '5litros', '10litros', 'gelato', 'sustancias'].forEach(buildFilterBar);
+
+    // ── Mapa de imágenes por sabor ───────────────────
+    var tabDefaultImgs = {
+      'paletas':    'img/paleta-frutos-bosque.jpg',
+      '5litros':    'img/envase-5litros.jpg',
+      '10litros':   null,
+      'gelato':     'img/helado-frambuesa.jpg',
+      'sustancias': 'img/helados-invierno.jpg'
+    };
+
+    var saborImgs = {
+      'chocolate-nutella':     'img/chocolate-nutella.jpg',
+      'chocolate-clasico':     'img/chocolate-nutella.jpg',
+      'chocolate-nutella-gc':  'img/chocolate-nutella.jpg',
+      'chocolate-80':          'img/chocolate-nutella.jpg',
+      'chocolate-10l':         'img/chocolate-nutella.jpg',
+      'frambuesa-huerto':      'img/paleta-frutos-bosque.jpg',
+      'frambuesa-5l':          'img/helado-frambuesa.jpg',
+      'frambuesa-10l':         'img/helado-frambuesa.jpg',
+      'frambuesa-sa':          'img/helado-frambuesa.jpg',
+      'bombon-frambuesa':      'img/helado-frambuesa.jpg',
+      'yogurt-griego-frambuesa':'img/helado-frambuesa.jpg',
+      'frutos-bosque':         'img/paleta-frutos-bosque.jpg',
+      'frutos-bosque-5l':      'img/paleta-frutos-bosque.jpg',
+      'frutos-bosque-gc':      'img/paleta-frutos-bosque.jpg',
+      'mango-maracuya':        'img/paleta-frutos-bosque.jpg',
+      'mango-maracuya-gc':     'img/paleta-frutos-bosque.jpg',
+      'frutilla-natural':      'img/paletas-variedad.jpg',
+      'frutilla-10l':          'img/paletas-variedad.jpg',
+      'frutilla-frambuesa':    'img/paletas-variedad.jpg',
+      'maracuya-pina':         'img/paletas-variedad.jpg',
+      'sustancia-tradicional': 'img/helados-invierno.jpg',
+      'helados-invierno':      'img/helados-invierno.jpg',
+      'confites-tradicionales':'img/helados-invierno.jpg',
+      'formato-individual':    'img/helados-invierno.jpg',
+      'formato-compartir':     'img/helados-invierno.jpg'
+    };
+
+    function cambiarImagen(tabId, key) {
+      var bloque = document.getElementById('tab-' + tabId);
+      if (!bloque) return;
+      var img = bloque.querySelector('.categoria-imagen img');
+      if (!img) return;
+      if (!img.dataset.srcOriginal) img.dataset.srcOriginal = img.getAttribute('src');
+      var newSrc = saborImgs[key] || tabDefaultImgs[tabId];
+      if (!newSrc || img.getAttribute('src') === newSrc) return;
+      img.style.opacity = '0';
+      setTimeout(function () { img.setAttribute('src', newSrc); img.style.opacity = '1'; }, 220);
+    }
+
+    function restaurarImagen(tabId) {
+      var bloque = document.getElementById('tab-' + tabId);
+      if (!bloque) return;
+      var img = bloque.querySelector('.categoria-imagen img');
+      if (!img || !img.dataset.srcOriginal) return;
+      if (img.getAttribute('src') === img.dataset.srcOriginal) return;
+      img.style.opacity = '0';
+      setTimeout(function () { img.setAttribute('src', img.dataset.srcOriginal); img.style.opacity = '1'; }, 220);
+    }
+
+    // ── Lógica de chips ─────────────────────────────
+    function llenarPanel(panel, d) {
+      panel.querySelector('.sabor-detalle-tipo').textContent    = d.tipo;
+      panel.querySelector('.sabor-detalle-nombre').textContent  = d.nombre;
+      panel.querySelector('.sabor-detalle-desc').textContent    = d.desc;
+      panel.querySelector('.ing-val').textContent               = d.ing;
+      panel.querySelector('.alerg-val').textContent             = d.alerge;
+      panel.querySelector('.n-kcal').textContent   = d.n.e   + ' kcal · ' + Math.round(d.n.e * 4.184) + ' kJ';
+      panel.querySelector('.n-grasas').textContent = d.n.g   + ' g';
+      panel.querySelector('.n-sat').textContent    = d.n.s   + ' g';
+      panel.querySelector('.n-hc').textContent     = d.n.hc  + ' g';
+      panel.querySelector('.n-az').textContent     = d.n.az  + ' g';
+      panel.querySelector('.n-prot').textContent   = d.n.p   + ' g';
+      panel.querySelector('.n-sal').textContent    = d.n.sal + ' g';
+    }
+
+    document.querySelectorAll('.sabor-chip').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var key   = this.dataset.sabor;
+        var tabId = this.dataset.tab;
+        var panel = document.getElementById('detalle-' + tabId);
+        var d     = sabores[key];
+        if (!d) return;
+
+        var mismaSabor = !panel.hidden && panel.dataset.current === key;
+        document.querySelectorAll('[data-tab="' + tabId + '"]').forEach(function (c) {
+          c.classList.remove('activo');
+        });
+
+        if (mismaSabor) {
+          panel.hidden = true;
+          panel.dataset.current = '';
+          restaurarImagen(tabId);
+          return;
+        }
+
+        llenarPanel(panel, d);
+        var dispEl = panel.querySelector('.sabor-disp');
+        if (dispEl) {
+          var disp = getDisp(key, tabId);
+          dispEl.className = 'sabor-disp ' + dispInfo[disp].cls;
+          dispEl.textContent = dispInfo[disp].label;
+        }
+        var details = panel.querySelector('details');
+        if (details) details.removeAttribute('open');
+
+        panel.hidden = false;
+        panel.dataset.current = key;
+        this.classList.add('activo');
+        cambiarImagen(tabId, key);
+        panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    });
+
+    document.querySelectorAll('.sabor-detalle-cerrar').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var panel = this.closest('.sabor-detalle');
+        var tabId = panel.id.replace('detalle-', '');
+        panel.hidden = true;
+        panel.dataset.current = '';
+        document.querySelectorAll('.sabor-chip').forEach(function (c) { c.classList.remove('activo'); });
+        restaurarImagen(tabId);
+      });
+    });
+  </script>
+
+</body>
+</html>

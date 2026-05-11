@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabores — Mepiache Helados Artesanales</title>
+  <meta name="description" content="Descubrí todos los productos de Mepiache: helados en formato 5 litros, paletas artesanales y envases de 10 litros.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────────────────── -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Mepiache Helados Artesanales" class="logo-img">
+      </a>
+      <nav class="nav">
+        <a href="sabores.html" class="activo">Sabores</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="https://wa.me/56963914909" target="_blank" class="btn-whatsapp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+          </svg>
+          Pedir por WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── BANNER DE PÁGINA ──────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="etiqueta-seccion">Lo que hacemos</p>
+      <h1 class="page-hero-titulo">Nuestros Productos</h1>
+      <p class="page-hero-sub">Helados artesanales en distintos formatos y líneas. Elaborados con ingredientes naturales desde 1954.</p>
+    </div>
+  </section>
+
+  <!-- ── HELADOS CON TABS ──────────────────────────────────── -->
+  <section class="seccion seccion-crema">
+    <div class="container">
+
+      <!-- Tabs de navegación -->
+      <div class="tabs-nav" role="tablist">
+        <button class="tab-btn activo" data-tab="5litros" role="tab">
+          <span class="tab-icono">🍨</span>
+          <span class="tab-nombre">5 Litros</span>
+          <span class="tab-desc-corta">Línea Premium</span>
+        </button>
+        <button class="tab-btn" data-tab="paletas" role="tab">
+          <span class="tab-icono">🍡</span>
+          <span class="tab-nombre">Paletas</span>
+          <span class="tab-desc-corta">Artesanales</span>
+        </button>
+        <button class="tab-btn" data-tab="10litros" role="tab">
+          <span class="tab-icono">🏺</span>
+          <span class="tab-nombre">10 Litros</span>
+          <span class="tab-desc-corta">Al por mayor</span>
+        </button>
+      </div>
+
+      <!-- Panel: 5 Litros -->
+      <div class="tab-panel activo" id="tab-5litros" role="tabpanel">
+        <div class="tab-info">
+          <h2 class="tab-titulo">Helados 5 Litros — Línea Premium</h2>
+          <p class="tab-subtitulo">Nuestra línea de alta gama para mayoristas, eventos y negocios. Sabores exclusivos con ingredientes de primera calidad.</p>
+        </div>
+        <div class="grid-sabores">
+
+          <div class="card-sabor destacado">
+            <div class="sabor-icono">🍪</div>
+            <h3>Alfajor</h3>
+            <p>Helado cremoso con dulce de leche y notas de coco. Inspirado en el clásico alfajor artesanal.</p>
+            <span class="tag tag-premium">Premium</span>
+          </div>
+
+          <div class="card-sabor">
+            <div class="sabor-icono">🍫</div>
+            <h3>Chocolate Nutella</h3>
+            <p>Chocolate intenso con avellanas. Nuestro sabor más pedido, un ícono desde los años 80.</p>
+            <span class="tag">5 Litros</span>
+          </div>
+
+          <div class="card-sabor">
+            <div class="sabor-icono">🤍</div>
+            <h3>Vainilla</h3>
+            <p>Vainilla pura, cremosa y equilibrada. La base perfecta para acompañar cualquier postre.</p>
+            <span class="tag">5 Litros</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Panel: Paletas -->
+      <div class="tab-panel" id="tab-paletas" role="tabpanel">
+        <div class="tab-info">
+          <h2 class="tab-titulo">Paletas Artesanales</h2>
+          <p class="tab-subtitulo">Elaboradas diariamente con frutas frescas y recetas propias. Sin colorantes artificiales, sabores que sorprenden.</p>
+        </div>
+        <div class="grid-sabores">
+
+          <div class="card-sabor destacado">
+            <div class="sabor-icono">🥭</div>
+            <h3>Mango Maracuyá</h3>
+            <p>Tropical e intensa. Frutas frescas seleccionadas que combinan dulzura y acidez perfectamente.</p>
+            <span class="tag tag-premium">Favorita</span>
+          </div>
+
+          <div class="card-sabor">
+            <div class="sabor-icono">🌿</div>
+            <h3>Pistacho</h3>
+            <p>Paleta cremosa de pistacho con un sabor suave, distinguido y levemente dulce.</p>
+            <span class="tag">Paleta</span>
+          </div>
+
+          <div class="card-sabor">
+            <div class="sabor-icono">🍋</div>
+            <h3>Limón Menta Jengibre</h3>
+            <p>Refrescante y sorprendente. Una combinación de tres sabores que despierta todos los sentidos.</p>
+            <span class="tag">Paleta</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Panel: 10 Litros -->
+      <div class="tab-panel" id="tab-10litros" role="tabpanel">
+        <div class="tab-info">
+          <h2 class="tab-titulo">Helados 10 Litros — Al por Mayor</h2>
+          <p class="tab-subtitulo">Ideal para reuniones grandes, negocios y distribuidores. Los sabores clásicos más pedidos en envase familiar.</p>
+        </div>
+        <div class="grid-sabores">
+
+          <div class="card-sabor">
+            <div class="sabor-icono">🍫</div>
+            <h3>Chocolate</h3>
+            <p>Chocolate cremoso y equilibrado, el favorito de todas las edades para cualquier ocasión.</p>
+            <span class="tag">10 Litros</span>
+          </div>
+
+          <div class="card-sabor">
+            <div class="sabor-icono">🍓</div>
+            <h3>Frutilla</h3>
+            <p>Elaborado con frutillas frescas de temporada. Frutal, vibrante y sin colorantes artificiales.</p>
+            <span class="tag">10 Litros</span>
+          </div>
+
+          <div class="card-sabor">
+            <div class="sabor-icono">🍦</div>
+            <h3>Vainilla</h3>
+            <p>El clásico irresistible. Suave y cremoso, perfecto para combinar con cualquier acompañamiento.</p>
+            <span class="tag">10 Litros</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="sabores-cta">
+        <p>¿Querés saber disponibilidad o hacer un pedido al por mayor?</p>
+        <a href="https://wa.me/56963914909?text=Hola,%20quiero%20consultar%20disponibilidad%20de%20helados" target="_blank" class="btn-primario">Consultar por WhatsApp</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── SUSTANCIAS ────────────────────────────────────────── -->
+  <section class="seccion seccion-oscura" id="sustancias">
+    <div class="container">
+      <p class="etiqueta-seccion claro">Golosina típica chilena</p>
+      <h2 class="titulo-seccion claro">Sustancias</h2>
+      <p class="subtitulo-seccion" style="color: rgba(245,230,200,0.65);">Una tradición dulce y esponjosa, elaborada artesanalmente con ingredientes simples y mucho cariño.</p>
+
+      <div class="sustancias-grid">
+
+        <div class="card-sustancia">
+          <div class="sustancia-header">
+            <span class="sustancia-icono">🤍</span>
+            <span class="badge-temporada">Temporada invierno</span>
+          </div>
+          <h3>Sustancias</h3>
+          <p class="sustancia-descripcion">Golosina típica chilena de textura suave y esponjosa, similar a los marshmallows o malvaviscos. Un clásico de los meses de frío que enamora a chicos y grandes.</p>
+          <ul class="sustancia-ingredientes">
+            <li>Claras de huevo</li>
+            <li>Azúcar</li>
+            <li>Agua</li>
+            <li>Colapez (gelatina)</li>
+          </ul>
+          <div class="sustancia-footer">
+            <span class="sustancia-precio">$5.000</span>
+            <a href="https://wa.me/56963914909?text=Hola%20Mepiache,%20quiero%20pedir%20sustancias" target="_blank" class="btn-primario btn-sustancia">Pedir por WhatsApp</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="logo.png" alt="Mepiache" class="footer-logo">
+      <p class="footer-tagline">Sabores que Encantan · Desde 1954</p>
+      <div class="footer-links">
+        <a href="sabores.html">Sabores</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <p class="footer-copy">© 2026 Mepiache. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ── BOTÓN FLOTANTE WHATSAPP ─────────────────────────── -->
+  <a href="https://wa.me/56963914909?text=Hola%20Mepiache,%20quiero%20hacer%20un%20pedido"
+     target="_blank" class="wa-flotante" title="Escribir por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+  </a>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('activo'));
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('activo'));
+        this.classList.add('activo');
+        document.getElementById('tab-' + this.dataset.tab).classList.add('activo');
+      });
+    });
+  </script>
+
+</body>
+</html>

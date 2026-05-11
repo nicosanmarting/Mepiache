@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Mepiache Helados Artesanales</title>
+  <meta name="description" content="Contacta a Mepiache para pedidos por WhatsApp o visítanos en Álvarez de Toledo 410, San Joaquín, Santiago.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────────────────── -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Mepiache Helados Artesanales" class="logo-img">
+      </a>
+      <nav class="nav">
+        <a href="sabores.html">Sabores</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+        <a href="https://wa.me/56963914909" target="_blank" class="btn-whatsapp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+          </svg>
+          Pedir por WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── BANNER DE PÁGINA ──────────────────────────────────── -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="etiqueta-seccion">Estamos para ti</p>
+      <h1 class="page-hero-titulo">Contacto y Pedidos</h1>
+      <p class="page-hero-sub">Escríbenos por WhatsApp o visítanos en Álvarez de Toledo 410, San Joaquín, Santiago.</p>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ─────────────────────────────────────────── -->
+  <section class="seccion seccion-crema">
+    <div class="container">
+
+      <div class="contacto-grid">
+
+        <!-- WhatsApp -->
+        <div class="contacto-whatsapp">
+          <div class="wa-icono">💬</div>
+          <h3>Pedidos por WhatsApp</h3>
+          <p>La forma más rápida de hacer tu pedido. Te respondemos al instante.</p>
+          <a href="https://wa.me/56963914909?text=Hola%20Mepiache,%20quiero%20hacer%20un%20pedido" target="_blank" class="btn-whatsapp-grande">
+            Escribir por WhatsApp
+          </a>
+          <p class="horario">Lunes a Domingo · 10:00 – 21:00</p>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contacto-form">
+          <h3>Formulario de contacto</h3>
+          <p>Para eventos, pedidos especiales o cualquier consulta.<br><small>📍 Álvarez de Toledo 410, San Joaquín, Santiago</small></p>
+          <form action="https://formspree.io/f/tu-id-aqui" method="POST">
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="campo">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+            </div>
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="Nuevo contacto desde mepiache.cl">
+            <button type="submit" class="btn-primario btn-full">Enviar mensaje</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ───────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="logo.png" alt="Mepiache" class="footer-logo">
+      <p class="footer-tagline">Sabores que Encantan · Desde 1954</p>
+      <div class="footer-links">
+        <a href="sabores.html">Sabores</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <p class="footer-copy">© 2026 Mepiache. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ── BOTÓN FLOTANTE WHATSAPP ─────────────────────────── -->
+  <a href="https://wa.me/56963914909?text=Hola%20Mepiache,%20quiero%20hacer%20un%20pedido"
+     target="_blank" class="wa-flotante" title="Escribir por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.122 1.535 5.854L.057 23.571a.75.75 0 00.914.914l5.674-1.472A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.713 9.713 0 01-4.951-1.355l-.355-.21-3.668.952.978-3.584-.23-.368A9.713 9.713 0 012.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
+    </svg>
+  </a>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    const form = document.querySelector('form');
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+        if (res.ok) {
+          form.innerHTML = '<p class="form-ok">✓ Mensaje enviado. Te contactamos pronto.</p>';
+        } else {
+          alert('Hubo un error. Intenta de nuevo.');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
