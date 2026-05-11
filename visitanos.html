@@ -204,7 +204,15 @@
     });
     document.querySelectorAll('.nav-item > a').forEach(function(a) {
       a.addEventListener('click', function(e) {
-        if (window.innerWidth <= 900) { e.preventDefault(); this.closest('.nav-item').classList.toggle('abierto'); }
+        if (window.innerWidth <= 900) {
+          var ni = this.closest('.nav-item');
+          if (ni.classList.contains('abierto')) {
+            ni.classList.remove('abierto');
+          } else {
+            e.preventDefault();
+            ni.classList.add('abierto');
+          }
+        }
       });
     });
     document.addEventListener('click', function(e) {

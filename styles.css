@@ -2372,8 +2372,13 @@ ul { list-style: none; }
   .identidad-grid { grid-template-columns: 1fr; }
   .identidad-card { border-right: none; }
 
-  .tabs-nav { gap: 0; }
-  .tab-btn { padding: 12px 14px 14px; flex: 1; }
+  .tabs-nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .tabs-nav::-webkit-scrollbar { display: none; }
+  .tab-btn { padding: 12px 14px 14px; flex: none; }
   .tab-desc-corta { display: none; }
 
   .galeria-grid { grid-template-columns: 1fr; }
