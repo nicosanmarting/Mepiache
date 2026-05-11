@@ -354,7 +354,7 @@
     });
     document.querySelectorAll('.nav-item > a').forEach(function(a) {
       a.addEventListener('click', function(e) {
-        if (window.innerWidth <= 768) { e.preventDefault(); this.closest('.nav-item').classList.toggle('abierto'); }
+        if (window.innerWidth <= 900) { e.preventDefault(); this.closest('.nav-item').classList.toggle('abierto'); }
       });
     });
     document.addEventListener('click', function(e) {
