@@ -27,6 +27,9 @@
 /* ── RESET Y BASE ──────────────────────────────── */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
+@media (min-width: 1024px) {
+  html { zoom: 1.25; }
+}
 body {
   font-family: 'Georgia', 'Times New Roman', serif;
   color: var(--cafe);
@@ -34,7 +37,7 @@ body {
   line-height: 1.7;
 }
 .container {
-  max-width: 1360px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 0 28px;
 }
@@ -337,20 +340,20 @@ ul { list-style: none; }
   margin-bottom: 22px;
 }
 .hero h1 {
-  font-size: clamp(34px, 5.5vw, 96px);
+  font-size: clamp(34px, 4.5vw, 60px);
   color: var(--crema);
-  line-height: 1.12;
+  line-height: 1.15;
   font-weight: normal;
   margin-bottom: 22px;
 }
 .hero h1 em { color: var(--dorado); font-style: italic; }
 .hero-sub {
   font-family: Arial, sans-serif;
-  font-size: clamp(15px, 1.1vw, 18px);
+  font-size: 16px;
   color: rgba(245,230,200,0.72);
   line-height: 1.65;
   margin-bottom: 38px;
-  max-width: 520px;
+  max-width: 480px;
 }
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
 
@@ -436,7 +439,7 @@ ul { list-style: none; }
   inset: 0;
   background: radial-gradient(ellipse at 50% 0%, rgba(200,148,26,0.1) 0%, transparent 65%);
 }
-.diferenciador .container { position: relative; z-index: 1; max-width: 900px; }
+.diferenciador .container { position: relative; z-index: 1; max-width: 780px; }
 .diferenciador-label {
   font-family: Arial, sans-serif;
   font-size: 11px;
@@ -614,7 +617,7 @@ ul { list-style: none; }
 }
 .page-hero .container { position: relative; z-index: 1; }
 .page-hero-titulo {
-  font-size: clamp(28px, 4.5vw, 68px);
+  font-size: clamp(28px, 4vw, 50px);
   color: var(--crema);
   font-weight: normal;
   line-height: 1.2;
