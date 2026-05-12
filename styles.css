@@ -337,20 +337,20 @@ ul { list-style: none; }
   margin-bottom: 22px;
 }
 .hero h1 {
-  font-size: clamp(34px, 4vw, 72px);
+  font-size: clamp(34px, 5.5vw, 96px);
   color: var(--crema);
-  line-height: 1.15;
+  line-height: 1.12;
   font-weight: normal;
   margin-bottom: 22px;
 }
 .hero h1 em { color: var(--dorado); font-style: italic; }
 .hero-sub {
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: clamp(15px, 1.1vw, 18px);
   color: rgba(245,230,200,0.72);
   line-height: 1.65;
   margin-bottom: 38px;
-  max-width: 480px;
+  max-width: 520px;
 }
 .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
 
@@ -614,7 +614,7 @@ ul { list-style: none; }
 }
 .page-hero .container { position: relative; z-index: 1; }
 .page-hero-titulo {
-  font-size: clamp(28px, 4vw, 50px);
+  font-size: clamp(28px, 4.5vw, 68px);
   color: var(--crema);
   font-weight: normal;
   line-height: 1.2;
