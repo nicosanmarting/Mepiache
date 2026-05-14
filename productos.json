@@ -292,7 +292,7 @@
       "imagen": null,
       "visible": true,
       "disponible": true,
-      "filtros": { "frutal": true, "cremoso": false, "vegano": true, "sinAzucar": true, "premium": false },
+      "filtros": { "frutal": false, "cremoso": false, "vegano": true, "sinAzucar": true, "premium": false },
       "ingredientes": "Agua, cacao 70%, leche de coco, eritritol, estevia.",
       "alergenos": "Sin alérgenos. Apto vegano. Sin azúcar añadida.",
       "tablaNutricional": { "porcion": "100 g", "e": 105, "g": 5.5, "s": 3.5, "hc": 11, "az": 0, "p": 2.0, "sal": 0.05 }
@@ -708,7 +708,7 @@
       "imagen": null,
       "visible": true,
       "disponible": true,
-      "filtros": { "frutal": true, "cremoso": false, "vegano": true, "sinAzucar": true, "premium": false },
+      "filtros": { "frutal": false, "cremoso": false, "vegano": true, "sinAzucar": true, "premium": false },
       "ingredientes": "Leche de coco, cacao, eritritol, estevia.",
       "alergenos": "Sin gluten. Sin azúcar añadida. Contiene coco.",
       "tablaNutricional": { "porcion": "100 g", "e": 98, "g": 5.5, "s": 4.0, "hc": 10, "az": 0, "p": 1.8, "sal": 0.05 }
@@ -747,7 +747,7 @@
       "imagen": null,
       "visible": true,
       "disponible": true,
-      "filtros": { "frutal": true, "cremoso": false, "vegano": true, "sinAzucar": true, "premium": false },
+      "filtros": { "frutal": false, "cremoso": false, "vegano": true, "sinAzucar": true, "premium": false },
       "ingredientes": "Agua, cacao 70%, leche de coco, eritritol, estevia.",
       "alergenos": "Sin alérgenos. Apto vegano. Sin azúcar añadida.",
       "tablaNutricional": { "porcion": "100 g", "e": 110, "g": 6.0, "s": 4.0, "hc": 12, "az": 0, "p": 2.0, "sal": 0.05 }

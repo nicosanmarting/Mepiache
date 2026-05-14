@@ -121,7 +121,7 @@
     setTimeout(function () { img.setAttribute('src', newSrc); img.style.opacity = '1'; }, 220);
   }
 
-  function restaurarImagen(tabId, tabDefaultImgs) {
+  function restaurarImagen(tabId) {
     var bloque = document.getElementById('tab-' + tabId);
     if (!bloque) return;
     var img = bloque.querySelector('.categoria-imagen img');
@@ -287,7 +287,7 @@
           d.hidden = true; d.dataset.current = '';
         });
         panelsContainer.querySelectorAll('.sabor-chip').forEach(function (c) { c.classList.remove('activo'); });
-        Object.keys(tabDefaultImgs).forEach(function (tid) { restaurarImagen(tid, tabDefaultImgs); });
+        Object.keys(tabDefaultImgs).forEach(function (tid) { restaurarImagen(tid); });
       });
     });
 
@@ -311,7 +311,7 @@
       if (mismaSabor) {
         detalleEl.hidden = true;
         detalleEl.dataset.current = '';
-        restaurarImagen(tabId, tabDefaultImgs);
+        restaurarImagen(tabId);
         return;
       }
 
@@ -341,7 +341,7 @@
   }
 
   // ── Main entry ──────────────────────────────────────────────────────
-  fetch('productos.json')
+  fetch('/productos.json')
     .then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
