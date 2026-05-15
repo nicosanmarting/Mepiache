@@ -1,4 +1,4 @@
-{
+window.PRODUCTOS_DATA = {
   "categorias": [
     {
       "id": "paletas",
@@ -1633,4 +1633,4 @@
       ]
     }
   ]
-}
+};

@@ -341,25 +341,23 @@
   }
 
   // ── Main entry ──────────────────────────────────────────────────────
-  fetch('/productos.json')
-    .then(function (r) {
-      if (!r.ok) throw new Error('HTTP ' + r.status);
-      return r.json();
-    })
-    .then(function (data) {
+  function iniciar(data) {
       var tabsNav        = document.getElementById('tabs-nav-container');
       var panelsContainer = document.getElementById('tabs-panels-container');
       if (!tabsNav || !panelsContainer) return;
 
-      // Build products map
+      // Build products map from embedded structure
       var productosMapa = {};
-      if (data.productos) {
-        Object.keys(data.productos).forEach(function (id) {
-          var p = data.productos[id];
-          p._id = id;
-          productosMapa[id] = p;
+      (data.categorias || []).forEach(function (cat) {
+        (cat.grupos || []).forEach(function (grupo) {
+          (grupo.productos || []).forEach(function (p) {
+            if (p.id) {
+              p._id = p.id;
+              productosMapa[p.id] = p;
+            }
+          });
         });
-      }
+      });
 
       // Apply saboresOcultos from config
       var ocultos = (window.MEPIACHE && MEPIACHE.saboresOcultos) || [];
@@ -415,11 +413,13 @@
 
       // Wire up events
       initEvents(tabsNav, panelsContainer, productosMapa, tabDefaultImgs);
-    })
-    .catch(function (err) {
-      console.error('[catalogo.js] No se pudo cargar productos.json:', err);
-      var c = document.getElementById('tabs-panels-container');
-      if (c) c.innerHTML = '<p style="padding:24px;color:var(--gris-texto);">No se pudieron cargar los productos. Intenta recargar la página.</p>';
-    });
+  }
+
+  if (window.PRODUCTOS_DATA) {
+    iniciar(window.PRODUCTOS_DATA);
+  } else {
+    var c = document.getElementById('tabs-panels-container');
+    if (c) c.innerHTML = '<p style="padding:24px;color:var(--gris-texto);">No se pudieron cargar los productos. Intenta recargar la página.</p>';
+  }
 
 })();
