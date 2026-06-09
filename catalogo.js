@@ -70,7 +70,7 @@
   }
 
   function buildDetallePanel(tabId) {
-    return '<div class="sabor-detalle" id="detalle-' + tabId + '" hidden>' +
+    return '<div class="sabor-detalle" id="detalle-' + tabId + '">' +
       '<div class="sabor-detalle-header">' +
         '<div>' +
           '<span class="sabor-detalle-tipo"></span>' +
@@ -178,7 +178,7 @@
     if (firstGrupo) contenido.insertBefore(bar, firstGrupo);
   }
 
-  function buildPanel(cat, productosMapa) {
+  function buildPanel(cat) {
     var panel = document.createElement('div');
     panel.className = 'tab-panel';
     panel.id = 'tab-' + cat.id;
@@ -203,11 +203,10 @@
     contenido.className = 'categoria-contenido';
     contenido.innerHTML = '<h3>' + cat.tituloCompleto + '</h3><p>' + cat.descripcionCategoria + '</p>';
 
-    // Product groups
+    // Product groups (grupo.productos contains product objects, not IDs)
     (cat.grupos || []).forEach(function (grupo) {
-      var visibles = (grupo.productos || []).filter(function (id) {
-        var p = productosMapa[id];
-        return p && p.visible !== false;
+      var visibles = (grupo.productos || []).filter(function (prod) {
+        return prod && prod.visible !== false;
       });
       if (!visibles.length) return;
 
@@ -218,16 +217,16 @@
       var chipsDiv = document.createElement('div');
       chipsDiv.className = 'sabores-chips';
 
-      visibles.forEach(function (id) {
-        var prod = productosMapa[id];
-        var tags = getTags(prod.filtros);
-        var extraClass = prod.filtros.vegano ? ' vegano' : (prod.filtros.premium ? ' premium' : '');
+      visibles.forEach(function (prod) {
+        var filtros = prod.filtros || {};
+        var tags = getTags(filtros);
+        var extraClass = filtros.vegano ? ' vegano' : (filtros.premium ? ' premium' : '');
         var icons = buildChipIcons(tags);
 
         var btn = document.createElement('button');
         btn.type = 'button';
         btn.className = 'sabor-chip' + extraClass;
-        btn.dataset.sabor = id;
+        btn.dataset.sabor = prod.id;
         btn.dataset.tab   = cat.id;
         btn.dataset.tags  = tags.join(' ');
         btn.innerHTML = icons + prod.nombre;
@@ -284,7 +283,7 @@
         var targetPanel = document.getElementById('tab-' + this.dataset.tab);
         if (targetPanel) targetPanel.classList.add('activo');
         panelsContainer.querySelectorAll('.sabor-detalle').forEach(function (d) {
-          d.hidden = true; d.dataset.current = '';
+          d.classList.remove('visible'); d.dataset.current = '';
         });
         panelsContainer.querySelectorAll('.sabor-chip').forEach(function (c) { c.classList.remove('activo'); });
         Object.keys(tabDefaultImgs).forEach(function (tid) { restaurarImagen(tid); });
@@ -302,14 +301,14 @@
       var detalleEl = document.getElementById('detalle-' + tabId);
       if (!prod || !detalleEl) return;
 
-      var mismaSabor = !detalleEl.hidden && detalleEl.dataset.current === id;
+      var mismaSabor = detalleEl.classList.contains('visible') && detalleEl.dataset.current === id;
 
       panelsContainer.querySelectorAll('.sabor-chip[data-tab="' + tabId + '"]').forEach(function (c) {
         c.classList.remove('activo');
       });
 
       if (mismaSabor) {
-        detalleEl.hidden = true;
+        detalleEl.classList.remove('visible');
         detalleEl.dataset.current = '';
         restaurarImagen(tabId);
         return;
@@ -319,11 +318,11 @@
       var details = detalleEl.querySelector('details');
       if (details) details.removeAttribute('open');
 
-      detalleEl.hidden = false;
+      detalleEl.classList.add('visible');
       detalleEl.dataset.current = id;
       btn.classList.add('activo');
       cambiarImagen(tabId, prod, tabDefaultImgs);
-      detalleEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      detalleEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 
     // Close button
@@ -333,10 +332,10 @@
       var detalleEl = closeBtn.closest('.sabor-detalle');
       if (!detalleEl) return;
       var tabId = detalleEl.id.replace('detalle-', '');
-      detalleEl.hidden = true;
+      detalleEl.classList.remove('visible');
       detalleEl.dataset.current = '';
       panelsContainer.querySelectorAll('.sabor-chip').forEach(function (c) { c.classList.remove('activo'); });
-      restaurarImagen(tabId, tabDefaultImgs);
+      restaurarImagen(tabId);
     });
   }
 
@@ -384,7 +383,7 @@
 
       // Build panels
       visibleCats.forEach(function (cat, i) {
-        var panel = buildPanel(cat, productosMapa);
+        var panel = buildPanel(cat);
         if (i === 0) panel.classList.add('activo');
         panelsContainer.appendChild(panel);
       });
