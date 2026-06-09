@@ -46,6 +46,16 @@
     btn.addEventListener('click', function () { abrir('empresas'); });
   });
 
+  var FORMSPREE_ID = 'mrevkwgl';
+
+  function enviarFormspree(datos) {
+    fetch('https://formspree.io/f/' + FORMSPREE_ID, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(datos)
+    }).catch(function () { /* silencioso — WhatsApp sigue funcionando igual */ });
+  }
+
   var formGeneral = document.getElementById('form-general');
   if (formGeneral) {
     formGeneral.addEventListener('submit', function (e) {
@@ -54,6 +64,9 @@
       var email   = document.getElementById('gen-email').value.trim();
       var tel     = document.getElementById('gen-telefono').value.trim();
       var mensaje = document.getElementById('gen-mensaje').value.trim();
+      // Enviar a Formspree (email)
+      enviarFormspree({ nombre: nombre, email: email, telefono: tel, mensaje: mensaje, tipo: 'general' });
+      // Abrir WhatsApp igual que antes
       var texto = 'Hola Mepiache, mi nombre es ' + nombre + '.';
       if (email)  texto += '\nCorreo: ' + email;
       if (tel)    texto += '\nTeléfono: ' + tel;
@@ -72,6 +85,9 @@
       var tel      = document.getElementById('emp-telefono').value.trim();
       var producto = document.getElementById('emp-producto').value;
       var mensaje  = document.getElementById('emp-mensaje').value.trim();
+      // Enviar a Formspree (email)
+      enviarFormspree({ nombre: nombre, empresa: empresa, email: email, telefono: tel, producto: producto, mensaje: mensaje, tipo: 'empresas' });
+      // Abrir WhatsApp igual que antes
       var texto = 'Hola Mepiache, soy ' + nombre;
       if (empresa) texto += ' de ' + empresa;
       texto += '.';
