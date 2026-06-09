@@ -2700,16 +2700,15 @@ ul { list-style: none; }
 .footer-link-discreto {
   background: none;
   border: none;
-  color: inherit;
-  font-size: inherit;
-  font-family: inherit;
+  color: rgba(245,230,200,0.5);
+  font-size: 13px;
+  font-family: Arial, sans-serif;
   cursor: pointer;
   padding: 0;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  opacity: 0.75;
+  text-decoration: none;
+  transition: color 0.2s;
 }
-.footer-link-discreto:hover { opacity: 1; }
+.footer-link-discreto:hover { color: var(--dorado-claro); }
 
 @media (max-width: 600px) {
   .contacto-tab-trigger {
