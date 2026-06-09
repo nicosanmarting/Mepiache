@@ -27,6 +27,7 @@
 /* ── RESET Y BASE ──────────────────────────────── */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; overflow-x: hidden; }
+body { overflow-x: hidden; }
 body {
   font-family: 'Georgia', 'Times New Roman', serif;
   color: var(--cafe);
@@ -1793,10 +1794,23 @@ ul { list-style: none; }
   .reviews-layout { grid-template-columns: 1fr; gap: 32px; }
   .review-card { min-width: calc(50% - 8px); }
 }
+
+/* 1 card visible at <640px — match JS visibleCount() threshold */
+@media (max-width: 640px) {
+  .reviews-carousel-viewport { width: 100%; overflow: hidden; }
+  .review-card {
+    min-width: 0;       /* override any desktop/tablet value */
+    flex: 0 0 100%;     /* fill track width — more reliable than min-width: 100% */
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 600px) {
-  .review-card { min-width: 100%; }
-  .carousel-prev { left: -12px; }
-  .carousel-next { right: -12px; }
+  /* Clip buttons that extend outside the outer — prevents scroll on iOS Safari */
+  .reviews-carousel-outer { overflow: hidden; width: 100%; }
+  /* Reposition buttons inside the clipping boundary */
+  .carousel-prev { left: 2px; }
+  .carousel-next { right: 2px; }
 }
 
 /* ── HIGHLIGHTS (INDEX) ─────────────────────────── */
