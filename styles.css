@@ -651,7 +651,6 @@ ul { list-style: none; }
 }
 .th-scroll {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   padding: 0 28px 16px;
   scrollbar-width: thin;
   scrollbar-color: var(--crema-oscura) transparent;
@@ -2457,8 +2456,7 @@ ul { list-style: none; }
   .galeria-grid {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
     gap: 12px;
     padding-bottom: 12px;
     scrollbar-width: none;
