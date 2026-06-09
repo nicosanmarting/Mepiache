@@ -1,9 +1,10 @@
 {
+  "cleanUrls": true,
   "redirects": [
-    {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    }
+    { "source": "/index.html",    "destination": "/",          "permanent": true },
+    { "source": "/historia.html", "destination": "/historia",  "permanent": true },
+    { "source": "/productos.html","destination": "/productos",  "permanent": true },
+    { "source": "/visitanos.html","destination": "/visitanos",  "permanent": true },
+    { "source": "/b2b.html",      "destination": "/b2b",        "permanent": true }
   ]
 }
