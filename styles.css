@@ -2509,7 +2509,7 @@ ul { list-style: none; }
     align-items: center;
     justify-content: center;
   }
-  .contacto-tab-trigger span { display: none; }
+  .contacto-tab-trigger span { display: none !important; }
   .contacto-tab-trigger::after {
     content: '✉';
     font-size: 19px;
